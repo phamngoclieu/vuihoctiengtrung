@@ -5,7 +5,6 @@ import {
   BookOpenText,
   Check,
   CheckCircle2,
-  ChevronDown,
   CircleAlert,
   Eye,
   FileAudio,
@@ -314,8 +313,14 @@ function ExercisesView({ preview }) {
         <div className="situation-list">
           {matching.situations.map((situation, index) => (
             <div key={situation.id}>
-              <span className="situation-visual" aria-hidden="true">{situation.id === 'lobby' ? '👋' : situation.id === 'help' ? '🤝' : '👩‍🏫'}</span>
-              <div><strong>{l('Tình huống', 'Situation', '情境')} {index + 1}</strong>{language === 'vi' ? <p>{situation.labelVi}</p> : null}<select onChange={(event) => { setAnswers((current) => ({ ...current, [situation.id]: event.target.value })); setSubmitted(false) }} value={answers[situation.id] || ''}><option value="">{l('Chọn đoạn hội thoại', 'Choose a dialogue', '选择对话')}</option>{matching.options.map((option) => <option key={option.id} value={option.id}>{option.id}. {option.zh}</option>)}</select>{submitted ? <small className={answers[situation.id] === situation.answer ? 'answer-correct' : 'answer-wrong'}>{answers[situation.id] === situation.answer ? l('Chính xác', 'Correct', '正确') : `${l('Đáp án', 'Answer', '答案')}: ${situation.answer}`}</small> : null}</div>
+              <img
+                alt={language === 'vi' ? situation.imageAltVi : language === 'en' ? situation.imageAltEn : situation.imageAltZh}
+                className="situation-visual"
+                decoding="async"
+                loading="eager"
+                src={situation.image}
+              />
+              <div><strong>{l('Hình', 'Picture', '图片')} {index + 1}</strong><select aria-label={`${l('Chọn đoạn hội thoại cho hình', 'Choose a dialogue for picture', '为图片选择对话')} ${index + 1}`} onChange={(event) => { setAnswers((current) => ({ ...current, [situation.id]: event.target.value })); setSubmitted(false) }} value={answers[situation.id] || ''}><option value="">{l('Chọn đoạn hội thoại', 'Choose a dialogue', '选择对话')}</option>{matching.options.map((option) => <option key={option.id} value={option.id}>{option.id}. {option.zh}</option>)}</select>{submitted ? <small className={answers[situation.id] === situation.answer ? 'answer-correct' : 'answer-wrong'}>{answers[situation.id] === situation.answer ? l('Chính xác', 'Correct', '正确') : `${l('Đáp án', 'Answer', '答案')}: ${situation.answer}`}</small> : null}</div>
             </div>
           ))}
         </div>
@@ -477,7 +482,6 @@ export default function LessonPage({ preview = false, initialTab = 'vocabulary' 
         {tabs.map((tab) => <button aria-selected={activeTab === tab.id} className={activeTab === tab.id ? 'is-active' : ''} key={tab.id} onClick={() => setActiveTab(tab.id)} role="tab" type="button">{t(tab.key)}</button>)}
       </div>
       <div className="lesson-content" key={activeTab}>{activeContent}</div>
-      <details className="source-details"><summary>{t('source')} <ChevronDown size={17} /></summary><dl><div><dt>{l('Giáo trình', 'Textbook', '教材')}</dt><dd>{lessonOne.sourceCoverage.textbookPages}</dd></div><div><dt>{l('Sách bài tập', 'Workbook', '练习册')}</dt><dd>{lessonOne.sourceCoverage.workbookPages}</dd></div><div><dt>PPT</dt><dd>{lessonOne.sourceCoverage.pptSlides}</dd></div><div><dt>Audio</dt><dd>{lessonOne.sourceCoverage.audio}</dd></div></dl></details>
     </AppShell>
   )
 }

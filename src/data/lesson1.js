@@ -1,4 +1,5 @@
 const audioRoot = `${import.meta.env.BASE_URL}audio/hsk1/lesson-01`
+const imageRoot = `${import.meta.env.BASE_URL}images/hsk1/lesson-01`
 
 export const lessonOne = {
   id: 'hsk1-lesson-01',
@@ -349,9 +350,9 @@ export const lessonOne = {
         { id: '3', zh: 'A：谢谢！ B：不客气！', py: 'A: Xièxie! B: Bú kèqi!' },
       ],
       situations: [
-        { id: 'lobby', labelVi: 'Hai người gặp nhau tại quầy lễ tân', answer: '1' },
-        { id: 'help', labelVi: 'Một người giúp người khác đứng dậy', answer: '3' },
-        { id: 'class', labelVi: 'Một giáo viên chào một nhóm học viên', answer: '2' },
+        { id: 'lobby', image: `${imageRoot}/workbook-question-5-situation-1.webp`, imageAltVi: 'Hai người chào nhau tại quầy lễ tân', imageAltEn: 'Two people greeting each other at a reception desk', imageAltZh: '两个人在前台互相问好', answer: '1' },
+        { id: 'help', image: `${imageRoot}/workbook-question-5-situation-2.webp`, imageAltVi: 'Một người đỡ người khác đứng dậy trên sân băng', imageAltEn: 'One person helping another get up on an ice rink', imageAltZh: '一个人在冰面上扶另一个人起来', answer: '3' },
+        { id: 'class', image: `${imageRoot}/workbook-question-5-situation-3.webp`, imageAltVi: 'Một giáo viên chào hai học viên', imageAltEn: 'A teacher greeting two students', imageAltZh: '一位老师向两名学生问好', answer: '2' },
       ],
     },
   ],

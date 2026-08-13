@@ -33,6 +33,24 @@ describe('nội dung HSK 1 · Bài 1', () => {
     expect(lessonOne.writing.sampleAnswer).toBeNull()
   })
 
+  it('bài tập tình huống dùng đủ ba hình màu gốc từ sách bài tập', () => {
+    const matching = lessonOne.workbookExercises.find((exercise) => exercise.type === 'matching')
+    expect(matching.situations).toHaveLength(3)
+    for (const situation of matching.situations) {
+      expect(situation.image).toMatch(/workbook-question-5-situation-\d\.webp$/)
+      expect(situation.labelVi).toBeUndefined()
+      const imagePath = resolve('public', situation.image.replace(import.meta.env.BASE_URL, ''))
+      expect(existsSync(imagePath)).toBe(true)
+      expect(readFileSync(imagePath).subarray(0, 4).toString()).toBe('RIFF')
+    }
+  })
+
+  it('không hiển thị lại khối nguồn đối chiếu trong trang bài học', () => {
+    const page = readFileSync(resolve('src/pages/LessonPage.jsx'), 'utf8')
+    expect(page).not.toContain('source-details')
+    expect(page).not.toContain('sourceCoverage')
+  })
+
   it('khóa mỗi loại bài nộp chính thức ở mức cơ sở dữ liệu', () => {
     const schema = readFileSync(resolve('supabase/migrations/20260810190000_initial_schema.sql'), 'utf8')
     expect(schema).toContain('unique (user_id, lesson_id, submission_type)')
