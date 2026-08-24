@@ -1,0 +1,65 @@
+name: Supabase daily health check
+
+on:
+  schedule:
+    # 09:17 every day in Vietnam and China (01:17 UTC).
+    - cron: '17 1 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/supabase-daily-health-check.yml
+
+permissions:
+  contents: read
+
+jobs:
+  check-supabase:
+    name: Query Supabase database
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      SUPABASE_URL: https://gwdolpizykckymzuummh.supabase.co
+      # This is a public client key, not a service-role or administrator secret.
+      SUPABASE_PUBLISHABLE_KEY: sb_publishable_sKhxOtdaYE2q9jLUosk1wA_c7pw4FIS
+    steps:
+      - name: Run three harmless database checks
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          for attempt in 1 2 3; do
+            response_file="$(mktemp)"
+            http_code="$(
+              curl \
+                --silent \
+                --show-error \
+                --retry 2 \
+                --retry-delay 5 \
+                --retry-all-errors \
+                --connect-timeout 15 \
+                --max-time 30 \
+                --output "$response_file" \
+                --write-out '%{http_code}' \
+                --request POST \
+                "$SUPABASE_URL/rest/v1/rpc/daily_health_check" \
+                --header "apikey: $SUPABASE_PUBLISHABLE_KEY" \
+                --header 'Content-Type: application/json' \
+                --data '{}'
+            )"
+
+            if [[ "$http_code" -lt 200 || "$http_code" -ge 300 ]]; then
+              echo "Supabase check $attempt failed with HTTP $http_code."
+              cat "$response_file"
+              exit 1
+            fi
+
+            if ! grep --quiet --line-regexp 'true' "$response_file"; then
+              echo "Supabase check $attempt returned an unexpected response."
+              cat "$response_file"
+              exit 1
+            fi
+
+            echo "Supabase check $attempt succeeded."
+          done
