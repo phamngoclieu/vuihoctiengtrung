@@ -68,7 +68,6 @@ export default function VocabularyPage({ preview = false }) {
         <div>
           <span className="eyebrow">HSK 3.0 · {l('Từ vựng theo cấp', 'Vocabulary by level', '分级词汇')}</span>
           <h1>{l('Kho từ vựng HSK 1–3', 'HSK 1–3 vocabulary library', 'HSK 1–3 级词汇库')}</h1>
-          <p>{l('Mỗi cấp là một danh sách riêng, không cộng dồn. Từ trùng với nội dung đã có trên web chỉ xuất hiện một lần.', 'Each level has its own non-cumulative list. Words already on the site appear only once.', '各级词表独立、不累计；与网站原有内容重复的词只保留一次。')}</p>
         </div>
         <div className="vocabulary-level-tabs" role="tablist" aria-label={l('Chọn cấp HSK', 'Choose HSK level', '选择HSK级别')}>
           {levels.map((item) => (
