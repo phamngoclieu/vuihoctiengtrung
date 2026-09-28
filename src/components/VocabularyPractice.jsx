@@ -55,7 +55,18 @@ export default function VocabularyPractice({ hskLevel, preview = false, vocabula
       const activeSession = await loadActiveVocabularyPracticeSession({ userId: user.id, hskLevel })
       if (!active || !activeSession) return
       if (!isVocabularyPracticeStateValid(activeSession.state, vocabulary)) {
-        throw new Error(l('Phiên đang lưu không còn khớp với danh sách từ hiện tại.', 'The saved session no longer matches the current vocabulary list.', '已保存的练习与当前词表不一致。'))
+        const refreshedState = createVocabularyPracticeState(vocabulary)
+        if (!refreshedState) return
+        const refreshedSession = await saveVocabularyPracticeSession({
+          sessionId: activeSession.id,
+          userId: user.id,
+          state: refreshedState,
+        })
+        if (!active) return
+        setSession(refreshedSession)
+        setState(refreshedSession.state)
+        setMessage(l('Danh sách từ đã được cập nhật. Lượt luyện mới đã sẵn sàng.', 'The vocabulary list was updated. A fresh practice run is ready.', '词表已更新，新的练习已准备好。'))
+        return
       }
       setSession(activeSession)
       setState(activeSession.state)
