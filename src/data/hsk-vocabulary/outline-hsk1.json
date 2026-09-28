@@ -1,0 +1,2702 @@
+[
+  {
+    "id": "hsk1-outline-0001",
+    "hanzi": "爱",
+    "pinyin": "ài",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "yêu; thích",
+    "source": "Đề cương HSK 3.0, mục 1; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0002",
+    "hanzi": "八",
+    "pinyin": "bā",
+    "partOfSpeech": "số từ",
+    "partOfSpeechSource": "数",
+    "meaningVi": "tám; 8",
+    "source": "Đề cương HSK 3.0, mục 2; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0003",
+    "hanzi": "爸爸",
+    "pinyin": "bàba",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "(thông tục) cha; ba",
+    "source": "Đề cương HSK 3.0, mục 3; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0004",
+    "hanzi": "吧",
+    "pinyin": "ba",
+    "partOfSpeech": "trợ từ",
+    "partOfSpeechSource": "助",
+    "meaningVi": "(trợ từ ngữ khí chỉ gợi ý hoặc phỏng đoán)",
+    "source": "Đề cương HSK 3.0, mục 4; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0005",
+    "hanzi": "白天",
+    "pinyin": "báitiān",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "ban ngày",
+    "source": "Đề cương HSK 3.0, mục 5; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0006",
+    "hanzi": "百",
+    "pinyin": "bǎi",
+    "partOfSpeech": "số từ",
+    "partOfSpeechSource": "数",
+    "meaningVi": "một trăm",
+    "source": "Đề cương HSK 3.0, mục 6; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0007",
+    "hanzi": "半",
+    "pinyin": "bàn",
+    "partOfSpeech": "phó từ / số từ",
+    "partOfSpeechSource": "数、（副）",
+    "meaningVi": "một nửa",
+    "source": "Đề cương HSK 3.0, mục 7; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0008",
+    "hanzi": "包子",
+    "pinyin": "bāozi",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "bánh bao (bánh hấp có nhân)",
+    "source": "Đề cương HSK 3.0, mục 8; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0009",
+    "hanzi": "杯子",
+    "pinyin": "bēizi",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "cốc",
+    "source": "Đề cương HSK 3.0, mục 9; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0010",
+    "hanzi": "本",
+    "pinyin": "běn",
+    "partOfSpeech": "lượng từ",
+    "partOfSpeechSource": "量",
+    "meaningVi": "lượng từ cho sách, tạp chí, hồ sơ, v.v.",
+    "source": "Đề cương HSK 3.0, mục 10; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0011",
+    "hanzi": "边",
+    "pinyin": "biān",
+    "partOfSpeech": "danh từ / hậu tố",
+    "partOfSpeechSource": "名、后缀",
+    "meaningVi": "bên",
+    "source": "Đề cương HSK 3.0, mục 11; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0012",
+    "hanzi": "病",
+    "pinyin": "bìng",
+    "partOfSpeech": "danh từ / động từ",
+    "partOfSpeechSource": "名、动",
+    "meaningVi": "bệnh",
+    "source": "Đề cương HSK 3.0, mục 12; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0013",
+    "hanzi": "不",
+    "pinyin": "bù",
+    "partOfSpeech": "phó từ",
+    "partOfSpeechSource": "副",
+    "meaningVi": "không; không phải",
+    "source": "Đề cương HSK 3.0, mục 13; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0014",
+    "hanzi": "不客气",
+    "pinyin": "bú kèqi",
+    "partOfSpeech": "từ / cụm từ",
+    "partOfSpeechSource": "",
+    "meaningVi": "không có chi",
+    "source": "Đề cương HSK 3.0, mục 14; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0015",
+    "hanzi": "不要",
+    "pinyin": "búyào",
+    "partOfSpeech": "phó từ",
+    "partOfSpeechSource": "副",
+    "meaningVi": "đừng!; không được",
+    "source": "Đề cương HSK 3.0, mục 15; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0016",
+    "hanzi": "菜",
+    "pinyin": "cài",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "rau (LT:棵[ke1])",
+    "source": "Đề cương HSK 3.0, mục 16; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0017",
+    "hanzi": "茶",
+    "pinyin": "chá",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "trà",
+    "source": "Đề cương HSK 3.0, mục 17; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0018",
+    "hanzi": "唱",
+    "pinyin": "chàng",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "hát",
+    "source": "Đề cương HSK 3.0, mục 18; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0019",
+    "hanzi": "超市",
+    "pinyin": "chāoshì",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "siêu thị (viết tắt của 超級市場|超级市场[chao1 ji2 shi4 chang3])",
+    "source": "Đề cương HSK 3.0, mục 19; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0020",
+    "hanzi": "车",
+    "pinyin": "chē",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "xe",
+    "source": "Đề cương HSK 3.0, mục 20; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0021",
+    "hanzi": "吃",
+    "pinyin": "chī",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "ăn; tiêu thụ",
+    "source": "Đề cương HSK 3.0, mục 21; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0022",
+    "hanzi": "出租车",
+    "pinyin": "chūzūchē",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "taxi",
+    "source": "Đề cương HSK 3.0, mục 22; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0023",
+    "hanzi": "穿",
+    "pinyin": "chuān",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "mặc",
+    "source": "Đề cương HSK 3.0, mục 23; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0024",
+    "hanzi": "打电话",
+    "pinyin": "dǎ diànhuà",
+    "partOfSpeech": "từ / cụm từ",
+    "partOfSpeechSource": "",
+    "meaningVi": "gọi điện thoại",
+    "source": "Đề cương HSK 3.0, mục 24; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0025",
+    "hanzi": "大",
+    "pinyin": "dà",
+    "partOfSpeech": "tính từ",
+    "partOfSpeechSource": "形",
+    "meaningVi": "to; lớn; vĩ đại",
+    "source": "Đề cương HSK 3.0, mục 25; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0026",
+    "hanzi": "大家",
+    "pinyin": "dàjiā",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "mọi người",
+    "source": "Đề cương HSK 3.0, mục 26; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0027",
+    "hanzi": "大学",
+    "pinyin": "dàxué",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "trường đại học",
+    "source": "Đề cương HSK 3.0, mục 27; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0028",
+    "hanzi": "大学生",
+    "pinyin": "dàxuéshēng",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "sinh viên đại học",
+    "source": "Đề cương HSK 3.0, mục 28; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0029",
+    "hanzi": "到",
+    "pinyin": "dào",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "đến; tới",
+    "source": "Đề cương HSK 3.0, mục 29; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0030",
+    "hanzi": "的",
+    "pinyin": "de",
+    "partOfSpeech": "trợ từ",
+    "partOfSpeechSource": "助",
+    "meaningVi": "của; ~(hậu tố sở hữu)",
+    "source": "Đề cương HSK 3.0, mục 30; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0031",
+    "hanzi": "第",
+    "pinyin": "dì",
+    "partOfSpeech": "tiền tố",
+    "partOfSpeechSource": "前缀",
+    "meaningVi": "(tiền tố chỉ số thứ tự, như trong 第六[di4 liu4] \"thứ sáu\")",
+    "source": "Đề cương HSK 3.0, mục 31; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0032",
+    "hanzi": "弟弟",
+    "pinyin": "dìdi",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "em trai",
+    "source": "Đề cương HSK 3.0, mục 32; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0033",
+    "hanzi": "点",
+    "pinyin": "diǎn",
+    "partOfSpeech": "danh từ / lượng từ",
+    "partOfSpeechSource": "量、（名）",
+    "meaningVi": "lượng từ cho mục",
+    "source": "Đề cương HSK 3.0, mục 33; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0034",
+    "hanzi": "店",
+    "pinyin": "diàn",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "quán trọ; khách sạn kiểu cũ (LT:家[jia1])",
+    "source": "Đề cương HSK 3.0, mục 34; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0035",
+    "hanzi": "电话",
+    "pinyin": "diànhuà",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "điện thoại",
+    "source": "Đề cương HSK 3.0, mục 35; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0036",
+    "hanzi": "电脑",
+    "pinyin": "diànnǎo",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "máy tính",
+    "source": "Đề cương HSK 3.0, mục 36; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0037",
+    "hanzi": "电视",
+    "pinyin": "diànshì",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "truyền hình; TV",
+    "source": "Đề cương HSK 3.0, mục 37; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0038",
+    "hanzi": "电影",
+    "pinyin": "diànyǐng",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "phim; điện ảnh",
+    "source": "Đề cương HSK 3.0, mục 38; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0039",
+    "hanzi": "电影院",
+    "pinyin": "diànyǐngyuàn",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "rạp chiếu phim; rạp phim",
+    "source": "Đề cương HSK 3.0, mục 39; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0040",
+    "hanzi": "东西",
+    "pinyin": "dōngxi",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "đồ vật",
+    "source": "Đề cương HSK 3.0, mục 40; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0041",
+    "hanzi": "都",
+    "pinyin": "dōu",
+    "partOfSpeech": "phó từ",
+    "partOfSpeechSource": "副",
+    "meaningVi": "đã",
+    "source": "Đề cương HSK 3.0, mục 41; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0042",
+    "hanzi": "读",
+    "pinyin": "dú",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "đọc ra; đọc to",
+    "source": "Đề cương HSK 3.0, mục 42; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0043",
+    "hanzi": "读书",
+    "pinyin": "dúshū",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "đọc sách",
+    "source": "Đề cương HSK 3.0, mục 43; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0044",
+    "hanzi": "对",
+    "pinyin": "duì",
+    "partOfSpeech": "động từ / tính từ / lượng từ / giới từ",
+    "partOfSpeechSource": "形、介、（动、量）",
+    "meaningVi": "đúng; chính xác",
+    "source": "Đề cương HSK 3.0, mục 44; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0045",
+    "hanzi": "对不起",
+    "pinyin": "duìbuqǐ",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "Tôi xin lỗi; xin thứ lỗi; tôi xin tha thứ",
+    "source": "Đề cương HSK 3.0, mục 45; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0046",
+    "hanzi": "多",
+    "pinyin": "duō",
+    "partOfSpeech": "động từ / tính từ / phó từ / đại từ / số từ",
+    "partOfSpeechSource": "形、动、代、（数、副）",
+    "meaningVi": "nhiều",
+    "source": "Đề cương HSK 3.0, mục 46; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0047",
+    "hanzi": "多少",
+    "pinyin": "duōshao",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "bao nhiêu?; mấy?",
+    "source": "Đề cương HSK 3.0, mục 47; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0048",
+    "hanzi": "儿子",
+    "pinyin": "érzi",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "con trai",
+    "source": "Đề cương HSK 3.0, mục 48; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0049",
+    "hanzi": "二",
+    "pinyin": "èr",
+    "partOfSpeech": "số từ",
+    "partOfSpeechSource": "数",
+    "meaningVi": "hai",
+    "source": "Đề cương HSK 3.0, mục 49; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0050",
+    "hanzi": "饭",
+    "pinyin": "fàn",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "cơm đã nấu",
+    "source": "Đề cương HSK 3.0, mục 50; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0051",
+    "hanzi": "饭店",
+    "pinyin": "fàndiàn",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "nhà hàng",
+    "source": "Đề cương HSK 3.0, mục 51; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0052",
+    "hanzi": "房间",
+    "pinyin": "fángjiān",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "phòng",
+    "source": "Đề cương HSK 3.0, mục 52; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0053",
+    "hanzi": "非常",
+    "pinyin": "fēicháng",
+    "partOfSpeech": "phó từ",
+    "partOfSpeechSource": "副",
+    "meaningVi": "rất; thực sự",
+    "source": "Đề cương HSK 3.0, mục 53; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0054",
+    "hanzi": "飞机",
+    "pinyin": "fēijī",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "máy bay",
+    "source": "Đề cương HSK 3.0, mục 54; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0055",
+    "hanzi": "分",
+    "pinyin": "fēn",
+    "partOfSpeech": "danh từ / động từ / lượng từ",
+    "partOfSpeechSource": "量、（动、名）",
+    "meaningVi": "chia; tách",
+    "source": "Đề cương HSK 3.0, mục 55; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0056",
+    "hanzi": "分钟",
+    "pinyin": "fēnzhōng",
+    "partOfSpeech": "lượng từ",
+    "partOfSpeechSource": "量",
+    "meaningVi": "phút",
+    "source": "Đề cương HSK 3.0, mục 56; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0057",
+    "hanzi": "高兴",
+    "pinyin": "gāoxìng",
+    "partOfSpeech": "tính từ",
+    "partOfSpeechSource": "形",
+    "meaningVi": "vui",
+    "source": "Đề cương HSK 3.0, mục 57; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0058",
+    "hanzi": "歌",
+    "pinyin": "gē",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "bài hát",
+    "source": "Đề cương HSK 3.0, mục 58; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0059",
+    "hanzi": "哥哥",
+    "pinyin": "gēge",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "anh trai",
+    "source": "Đề cương HSK 3.0, mục 59; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0060",
+    "hanzi": "个",
+    "pinyin": "gè",
+    "partOfSpeech": "lượng từ",
+    "partOfSpeechSource": "量",
+    "meaningVi": "(lượng từ dùng trước danh từ không có lượng từ cụ thể)",
+    "source": "Đề cương HSK 3.0, mục 60; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0061",
+    "hanzi": "给",
+    "pinyin": "gěi",
+    "partOfSpeech": "động từ / giới từ",
+    "partOfSpeechSource": "动、（介）",
+    "meaningVi": "cho",
+    "source": "Đề cương HSK 3.0, mục 61; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0062",
+    "hanzi": "公司",
+    "pinyin": "gōngsī",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "công ty; hãng; tập đoàn",
+    "source": "Đề cương HSK 3.0, mục 62; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0063",
+    "hanzi": "工作",
+    "pinyin": "gōngzuò",
+    "partOfSpeech": "danh từ / động từ",
+    "partOfSpeechSource": "动、名",
+    "meaningVi": "làm việc",
+    "source": "Đề cương HSK 3.0, mục 63; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0064",
+    "hanzi": "狗",
+    "pinyin": "gǒu",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "chó",
+    "source": "Đề cương HSK 3.0, mục 64; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0065",
+    "hanzi": "贵",
+    "pinyin": "guì",
+    "partOfSpeech": "tính từ",
+    "partOfSpeechSource": "形",
+    "meaningVi": "đắt",
+    "source": "Đề cương HSK 3.0, mục 65; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0066",
+    "hanzi": "国",
+    "pinyin": "guó",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "quốc gia; dân tộc; nhà nước (LT:個|个[ge4])",
+    "source": "Đề cương HSK 3.0, mục 66; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0067",
+    "hanzi": "还",
+    "pinyin": "hái",
+    "partOfSpeech": "phó từ",
+    "partOfSpeechSource": "副",
+    "meaningVi": "vẫn",
+    "source": "Đề cương HSK 3.0, mục 67; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0068",
+    "hanzi": "孩子",
+    "pinyin": "háizi",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "trẻ em",
+    "source": "Đề cương HSK 3.0, mục 68; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0069",
+    "hanzi": "汉语",
+    "pinyin": "Hànyǔ",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "Ngôn ngữ tiếng Trung",
+    "source": "Đề cương HSK 3.0, mục 69; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0070",
+    "hanzi": "汉字",
+    "pinyin": "Hànzì",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "chữ Hán",
+    "source": "Đề cương HSK 3.0, mục 70; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0071",
+    "hanzi": "好",
+    "pinyin": "hǎo",
+    "partOfSpeech": "động từ / tính từ / phó từ",
+    "partOfSpeechSource": "形、（副）、（动）",
+    "meaningVi": "tốt",
+    "source": "Đề cương HSK 3.0, mục 71; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0072",
+    "hanzi": "好吃",
+    "pinyin": "hǎochī",
+    "partOfSpeech": "tính từ",
+    "partOfSpeechSource": "形",
+    "meaningVi": "ngon; ngon miệng",
+    "source": "Đề cương HSK 3.0, mục 72; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0073",
+    "hanzi": "好看",
+    "pinyin": "hǎokàn",
+    "partOfSpeech": "tính từ",
+    "partOfSpeechSource": "形",
+    "meaningVi": "ưa nhìn",
+    "source": "Đề cương HSK 3.0, mục 73; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0074",
+    "hanzi": "好听",
+    "pinyin": "hǎotīng",
+    "partOfSpeech": "tính từ",
+    "partOfSpeechSource": "形",
+    "meaningVi": "nghe hay",
+    "source": "Đề cương HSK 3.0, mục 74; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0075",
+    "hanzi": "好玩儿",
+    "pinyin": "hǎowánr",
+    "partOfSpeech": "tính từ",
+    "partOfSpeechSource": "形",
+    "meaningVi": "biến thể er hoá của 好玩[hao3 wan2]",
+    "source": "Đề cương HSK 3.0, mục 75; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0076",
+    "hanzi": "号",
+    "pinyin": "hào",
+    "partOfSpeech": "danh từ / lượng từ",
+    "partOfSpeechSource": "名、量",
+    "meaningVi": "số thứ tự",
+    "source": "Đề cương HSK 3.0, mục 76; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0077",
+    "hanzi": "喝",
+    "pinyin": "hē",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "uống",
+    "source": "Đề cương HSK 3.0, mục 77; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0078",
+    "hanzi": "和",
+    "pinyin": "hé",
+    "partOfSpeech": "giới từ / liên từ",
+    "partOfSpeechSource": "介、连",
+    "meaningVi": "(nối hai danh từ) và; cùng với; với (cách đọc ở Đài Loan [han4])",
+    "source": "Đề cương HSK 3.0, mục 78; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0079",
+    "hanzi": "很",
+    "pinyin": "hěn",
+    "partOfSpeech": "phó từ",
+    "partOfSpeechSource": "副",
+    "meaningVi": "rất",
+    "source": "Đề cương HSK 3.0, mục 79; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0080",
+    "hanzi": "后",
+    "pinyin": "hòu",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "hoàng hậu",
+    "source": "Đề cương HSK 3.0, mục 80; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0081",
+    "hanzi": "回",
+    "pinyin": "huí",
+    "partOfSpeech": "động từ / lượng từ",
+    "partOfSpeechSource": "动、（量）",
+    "meaningVi": "xoay vòng",
+    "source": "Đề cương HSK 3.0, mục 81; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0082",
+    "hanzi": "会",
+    "pinyin": "huì",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "có thể; có kỹ năng; biết cách",
+    "source": "Đề cương HSK 3.0, mục 82; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0083",
+    "hanzi": "火车",
+    "pinyin": "huǒchē",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "tàu hỏa",
+    "source": "Đề cương HSK 3.0, mục 83; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0084",
+    "hanzi": "鸡蛋",
+    "pinyin": "jīdàn",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "trứng (gà)",
+    "source": "Đề cương HSK 3.0, mục 84; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0085",
+    "hanzi": "几",
+    "pinyin": "jǐ",
+    "partOfSpeech": "đại từ / số từ",
+    "partOfSpeechSource": "代、数",
+    "meaningVi": "bao nhiêu",
+    "source": "Đề cương HSK 3.0, mục 85; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0086",
+    "hanzi": "家",
+    "pinyin": "jiā",
+    "partOfSpeech": "danh từ / lượng từ / hậu tố",
+    "partOfSpeechSource": "名、量、（后缀）",
+    "meaningVi": "dùng trong 傢伙|家伙[jia1 huo5] và 傢俱|家俱[jia1 ju4]",
+    "source": "Đề cương HSK 3.0, mục 86; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0087",
+    "hanzi": "家人",
+    "pinyin": "jiārén",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "thành viên gia đình",
+    "source": "Đề cương HSK 3.0, mục 87; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0088",
+    "hanzi": "见",
+    "pinyin": "jiàn",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "thấy",
+    "source": "Đề cương HSK 3.0, mục 88; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0089",
+    "hanzi": "件",
+    "pinyin": "jiàn",
+    "partOfSpeech": "lượng từ",
+    "partOfSpeechSource": "量",
+    "meaningVi": "lượng từ cho sự kiện, đồ vật, quần áo, v.v.",
+    "source": "Đề cương HSK 3.0, mục 89; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0090",
+    "hanzi": "饺子",
+    "pinyin": "jiǎozi",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "bánh sủi cảo",
+    "source": "Đề cương HSK 3.0, mục 90; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0091",
+    "hanzi": "叫",
+    "pinyin": "jiào",
+    "partOfSpeech": "động từ / giới từ",
+    "partOfSpeechSource": "动、（介）",
+    "meaningVi": "kêu",
+    "source": "Đề cương HSK 3.0, mục 91; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0092",
+    "hanzi": "姐姐",
+    "pinyin": "jiějie",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "chị gái",
+    "source": "Đề cương HSK 3.0, mục 92; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0093",
+    "hanzi": "今年",
+    "pinyin": "jīnnián",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "năm nay",
+    "source": "Đề cương HSK 3.0, mục 93; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0094",
+    "hanzi": "今天",
+    "pinyin": "jīntiān",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "hôm nay",
+    "source": "Đề cương HSK 3.0, mục 94; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0095",
+    "hanzi": "九",
+    "pinyin": "jiǔ",
+    "partOfSpeech": "số từ",
+    "partOfSpeechSource": "数",
+    "meaningVi": "chín",
+    "source": "Đề cương HSK 3.0, mục 95; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0096",
+    "hanzi": "觉得",
+    "pinyin": "juéde",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "nghĩ rằng ...; cảm thấy rằng ...",
+    "source": "Đề cương HSK 3.0, mục 96; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0097",
+    "hanzi": "开",
+    "pinyin": "kāi",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "mở (ngoại động từ hoặc nội động từ)",
+    "source": "Đề cương HSK 3.0, mục 97; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0098",
+    "hanzi": "开车",
+    "pinyin": "kāichē",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "lái xe",
+    "source": "Đề cương HSK 3.0, mục 98; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0099",
+    "hanzi": "看",
+    "pinyin": "kàn",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "nhìn; xem",
+    "source": "Đề cương HSK 3.0, mục 99; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0100",
+    "hanzi": "看病",
+    "pinyin": "kànbìng",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "đi khám bệnh",
+    "source": "Đề cương HSK 3.0, mục 100; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0101",
+    "hanzi": "看见",
+    "pinyin": "kànjiàn",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "nhìn thấy",
+    "source": "Đề cương HSK 3.0, mục 101; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0102",
+    "hanzi": "可以",
+    "pinyin": "kěyǐ",
+    "partOfSpeech": "động từ / tính từ",
+    "partOfSpeechSource": "动、形",
+    "meaningVi": "có thể",
+    "source": "Đề cương HSK 3.0, mục 102; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0103",
+    "hanzi": "课",
+    "pinyin": "kè",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "môn học",
+    "source": "Đề cương HSK 3.0, mục 103; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0104",
+    "hanzi": "口",
+    "pinyin": "kǒu",
+    "partOfSpeech": "danh từ / lượng từ",
+    "partOfSpeechSource": "名、量",
+    "meaningVi": "miệng",
+    "source": "Đề cương HSK 3.0, mục 104; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0105",
+    "hanzi": "块",
+    "pinyin": "kuài",
+    "partOfSpeech": "lượng từ",
+    "partOfSpeechSource": "量",
+    "meaningVi": "lượng từ cho miếng vải, bánh, xà phòng, v.v.",
+    "source": "Đề cương HSK 3.0, mục 105; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0106",
+    "hanzi": "来",
+    "pinyin": "lái",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "đến",
+    "source": "Đề cương HSK 3.0, mục 106; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0107",
+    "hanzi": "老师",
+    "pinyin": "lǎoshī",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "giáo viên",
+    "source": "Đề cương HSK 3.0, mục 107; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0108",
+    "hanzi": "了",
+    "pinyin": "le",
+    "partOfSpeech": "trợ từ",
+    "partOfSpeechSource": "助",
+    "meaningVi": "(trợ từ chỉ hành động đã hoàn thành)",
+    "source": "Đề cương HSK 3.0, mục 108; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0109",
+    "hanzi": "冷",
+    "pinyin": "lěng",
+    "partOfSpeech": "tính từ",
+    "partOfSpeechSource": "形",
+    "meaningVi": "lạnh",
+    "source": "Đề cương HSK 3.0, mục 109; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0110",
+    "hanzi": "里",
+    "pinyin": "lǐ",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "lót",
+    "source": "Đề cương HSK 3.0, mục 110; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0111",
+    "hanzi": "两",
+    "pinyin": "liǎng",
+    "partOfSpeech": "số từ",
+    "partOfSpeechSource": "数",
+    "meaningVi": "hai",
+    "source": "Đề cương HSK 3.0, mục 111; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0112",
+    "hanzi": "零",
+    "pinyin": "líng",
+    "partOfSpeech": "số từ",
+    "partOfSpeechSource": "数",
+    "meaningVi": "không",
+    "source": "Đề cương HSK 3.0, mục 112; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0113",
+    "hanzi": "六",
+    "pinyin": "liù",
+    "partOfSpeech": "số từ",
+    "partOfSpeechSource": "数",
+    "meaningVi": "sáu",
+    "source": "Đề cương HSK 3.0, mục 113; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0114",
+    "hanzi": "妈妈",
+    "pinyin": "māma",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "mẹ",
+    "source": "Đề cương HSK 3.0, mục 114; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0115",
+    "hanzi": "吗",
+    "pinyin": "ma",
+    "partOfSpeech": "trợ từ",
+    "partOfSpeechSource": "助",
+    "meaningVi": "(trợ từ nghi vấn cho câu hỏi \"có-không\")",
+    "source": "Đề cương HSK 3.0, mục 115; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0116",
+    "hanzi": "买",
+    "pinyin": "mǎi",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "mua",
+    "source": "Đề cương HSK 3.0, mục 116; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0117",
+    "hanzi": "卖",
+    "pinyin": "mài",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "bán",
+    "source": "Đề cương HSK 3.0, mục 117; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0118",
+    "hanzi": "忙",
+    "pinyin": "máng",
+    "partOfSpeech": "động từ / tính từ",
+    "partOfSpeechSource": "形、动",
+    "meaningVi": "bận",
+    "source": "Đề cương HSK 3.0, mục 118; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0119",
+    "hanzi": "猫",
+    "pinyin": "māo",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "mèo (LT: 隻|只[zhi1])",
+    "source": "Đề cương HSK 3.0, mục 119; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0120",
+    "hanzi": "没关系",
+    "pinyin": "méi guānxi",
+    "partOfSpeech": "từ / cụm từ",
+    "partOfSpeechSource": "",
+    "meaningVi": "không sao đâu",
+    "source": "Đề cương HSK 3.0, mục 120; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0121",
+    "hanzi": "没事",
+    "pinyin": "méishì",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "không quan trọng",
+    "source": "Đề cương HSK 3.0, mục 121; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0122",
+    "hanzi": "没有",
+    "pinyin": "méiyǒu",
+    "partOfSpeech": "động từ / phó từ",
+    "partOfSpeechSource": "动、副",
+    "meaningVi": "không có",
+    "source": "Đề cương HSK 3.0, mục 122; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0123",
+    "hanzi": "妹妹",
+    "pinyin": "mèimei",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "em gái",
+    "source": "Đề cương HSK 3.0, mục 123; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0124",
+    "hanzi": "们",
+    "pinyin": "men",
+    "partOfSpeech": "hậu tố",
+    "partOfSpeechSource": "后缀",
+    "meaningVi": "dùng để chỉ số nhiều cho đại từ và danh từ chỉ người",
+    "source": "Đề cương HSK 3.0, mục 124; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0125",
+    "hanzi": "米饭",
+    "pinyin": "mǐfàn",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "(cơm) đã nấu",
+    "source": "Đề cương HSK 3.0, mục 125; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0126",
+    "hanzi": "面包",
+    "pinyin": "miànbāo",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "bánh mì",
+    "source": "Đề cương HSK 3.0, mục 126; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0127",
+    "hanzi": "面条儿",
+    "pinyin": "miàntiáor",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "biến thể er hoá của 麵條|面条[mian4 tiao2]",
+    "source": "Đề cương HSK 3.0, mục 127; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0128",
+    "hanzi": "明年",
+    "pinyin": "míngnián",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "năm sau",
+    "source": "Đề cương HSK 3.0, mục 128; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0129",
+    "hanzi": "明天",
+    "pinyin": "míngtiān",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "ngày mai",
+    "source": "Đề cương HSK 3.0, mục 129; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0130",
+    "hanzi": "名字",
+    "pinyin": "míngzi",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "tên (của người hoặc vật)",
+    "source": "Đề cương HSK 3.0, mục 130; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0131",
+    "hanzi": "哪",
+    "pinyin": "nǎ",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "như thế nào",
+    "source": "Đề cương HSK 3.0, mục 131; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0132",
+    "hanzi": "哪个",
+    "pinyin": "nǎge",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "nào",
+    "source": "Đề cương HSK 3.0, mục 132; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0133",
+    "hanzi": "哪里",
+    "pinyin": "nǎlǐ",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "ở đâu?",
+    "source": "Đề cương HSK 3.0, mục 133; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0134",
+    "hanzi": "哪儿",
+    "pinyin": "nǎr",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "ở đâu?",
+    "source": "Đề cương HSK 3.0, mục 134; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0135",
+    "hanzi": "哪些",
+    "pinyin": "nǎxiē",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "những cái nào?",
+    "source": "Đề cương HSK 3.0, mục 135; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0136",
+    "hanzi": "那",
+    "pinyin": "nà",
+    "partOfSpeech": "đại từ / liên từ",
+    "partOfSpeechSource": "代、（连）",
+    "meaningVi": "(đại từ) đó (chỉ người, sự vật hoặc tình huống)",
+    "source": "Đề cương HSK 3.0, mục 136; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0137",
+    "hanzi": "那边",
+    "pinyin": "nàbiān",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "đằng kia",
+    "source": "Đề cương HSK 3.0, mục 137; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0138",
+    "hanzi": "那个",
+    "pinyin": "nàge",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "cái đó",
+    "source": "Đề cương HSK 3.0, mục 138; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0139",
+    "hanzi": "那里",
+    "pinyin": "nàlǐ",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "ở đó; nơi đó",
+    "source": "Đề cương HSK 3.0, mục 139; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0140",
+    "hanzi": "那儿",
+    "pinyin": "nàr",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "ở đó",
+    "source": "Đề cương HSK 3.0, mục 140; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0141",
+    "hanzi": "那些",
+    "pinyin": "nàxiē",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "những cái đó",
+    "source": "Đề cương HSK 3.0, mục 141; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0142",
+    "hanzi": "男",
+    "pinyin": "nán",
+    "partOfSpeech": "tính từ",
+    "partOfSpeechSource": "形",
+    "meaningVi": "nam",
+    "source": "Đề cương HSK 3.0, mục 142; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0143",
+    "hanzi": "男朋友",
+    "pinyin": "nánpéngyou",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "bạn trai",
+    "source": "Đề cương HSK 3.0, mục 143; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0144",
+    "hanzi": "呢",
+    "pinyin": "ne",
+    "partOfSpeech": "trợ từ",
+    "partOfSpeechSource": "助",
+    "meaningVi": "trợ từ chỉ rằng câu hỏi được hỏi trước đó áp dụng cho từ đứng trước (\"Còn ...?\", \"Và ...?\")",
+    "source": "Đề cương HSK 3.0, mục 144; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0145",
+    "hanzi": "能",
+    "pinyin": "néng",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "có thể",
+    "source": "Đề cương HSK 3.0, mục 145; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0146",
+    "hanzi": "你",
+    "pinyin": "nǐ",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "bạn (ngôi thứ hai thông dụng, khác với kính trọng 您[nin2])",
+    "source": "Đề cương HSK 3.0, mục 146; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0147",
+    "hanzi": "你好",
+    "pinyin": "nǐ hǎo",
+    "partOfSpeech": "từ / cụm từ",
+    "partOfSpeechSource": "",
+    "meaningVi": "xin chào",
+    "source": "Đề cương HSK 3.0, mục 147; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0148",
+    "hanzi": "你们",
+    "pinyin": "nǐmen",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "các bạn (số nhiều)",
+    "source": "Đề cương HSK 3.0, mục 148; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0149",
+    "hanzi": "年",
+    "pinyin": "nián",
+    "partOfSpeech": "danh từ / lượng từ",
+    "partOfSpeechSource": "名、量",
+    "meaningVi": "năm",
+    "source": "Đề cương HSK 3.0, mục 149; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0150",
+    "hanzi": "您",
+    "pinyin": "nín",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "bạn (kính trọng, trái với thân mật 你[ni3])",
+    "source": "Đề cương HSK 3.0, mục 150; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0151",
+    "hanzi": "牛奶",
+    "pinyin": "niúnǎi",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "sữa bò",
+    "source": "Đề cương HSK 3.0, mục 151; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0152",
+    "hanzi": "女",
+    "pinyin": "nǚ",
+    "partOfSpeech": "tính từ",
+    "partOfSpeechSource": "形",
+    "meaningVi": "nữ",
+    "source": "Đề cương HSK 3.0, mục 152; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0153",
+    "hanzi": "女儿",
+    "pinyin": "nǚ’ér",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "con gái",
+    "source": "Đề cương HSK 3.0, mục 153; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0154",
+    "hanzi": "女朋友",
+    "pinyin": "nǚpéngyou",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "bạn gái",
+    "source": "Đề cương HSK 3.0, mục 154; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0155",
+    "hanzi": "女士",
+    "pinyin": "nǚshì",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "quý bà",
+    "source": "Đề cương HSK 3.0, mục 155; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0156",
+    "hanzi": "朋友",
+    "pinyin": "péngyou",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "bạn",
+    "source": "Đề cương HSK 3.0, mục 156; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0157",
+    "hanzi": "便宜",
+    "pinyin": "piányi",
+    "partOfSpeech": "tính từ",
+    "partOfSpeechSource": "形",
+    "meaningVi": "rẻ; không đắt",
+    "source": "Đề cương HSK 3.0, mục 157; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0158",
+    "hanzi": "漂亮",
+    "pinyin": "piàoliang",
+    "partOfSpeech": "tính từ",
+    "partOfSpeechSource": "形",
+    "meaningVi": "xinh đẹp; đẹp",
+    "source": "Đề cương HSK 3.0, mục 158; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0159",
+    "hanzi": "苹果",
+    "pinyin": "píngguǒ",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "quả táo",
+    "source": "Đề cương HSK 3.0, mục 159; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0160",
+    "hanzi": "七",
+    "pinyin": "qī",
+    "partOfSpeech": "số từ",
+    "partOfSpeechSource": "数",
+    "meaningVi": "bảy",
+    "source": "Đề cương HSK 3.0, mục 160; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0161",
+    "hanzi": "起床",
+    "pinyin": "qǐchuáng",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "thức dậy; ngủ dậy",
+    "source": "Đề cương HSK 3.0, mục 161; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0162",
+    "hanzi": "千",
+    "pinyin": "qiān",
+    "partOfSpeech": "số từ",
+    "partOfSpeechSource": "数",
+    "meaningVi": "một nghìn",
+    "source": "Đề cương HSK 3.0, mục 162; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0163",
+    "hanzi": "前",
+    "pinyin": "qián",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "trước",
+    "source": "Đề cương HSK 3.0, mục 163; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0164",
+    "hanzi": "钱",
+    "pinyin": "qián",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "tiền xu",
+    "source": "Đề cương HSK 3.0, mục 164; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0165",
+    "hanzi": "请",
+    "pinyin": "qǐng",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "mời",
+    "source": "Đề cương HSK 3.0, mục 165; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0166",
+    "hanzi": "请问",
+    "pinyin": "qǐngwèn",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "xin lỗi, cho tôi hỏi...?",
+    "source": "Đề cương HSK 3.0, mục 166; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0167",
+    "hanzi": "去",
+    "pinyin": "qù",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "đi",
+    "source": "Đề cương HSK 3.0, mục 167; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0168",
+    "hanzi": "去年",
+    "pinyin": "qùnián",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "năm ngoái",
+    "source": "Đề cương HSK 3.0, mục 168; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0169",
+    "hanzi": "热",
+    "pinyin": "rè",
+    "partOfSpeech": "tính từ",
+    "partOfSpeechSource": "形",
+    "meaningVi": "hâm nóng",
+    "source": "Đề cương HSK 3.0, mục 169; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0170",
+    "hanzi": "人",
+    "pinyin": "rén",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "người; mọi người",
+    "source": "Đề cương HSK 3.0, mục 170; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0171",
+    "hanzi": "认识",
+    "pinyin": "rènshi",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "biết",
+    "source": "Đề cương HSK 3.0, mục 171; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0172",
+    "hanzi": "日",
+    "pinyin": "rì",
+    "partOfSpeech": "danh từ / lượng từ",
+    "partOfSpeechSource": "量、（名）",
+    "meaningVi": "mặt trời",
+    "source": "Đề cương HSK 3.0, mục 172; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0173",
+    "hanzi": "三",
+    "pinyin": "sān",
+    "partOfSpeech": "số từ",
+    "partOfSpeechSource": "数",
+    "meaningVi": "ba",
+    "source": "Đề cương HSK 3.0, mục 173; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0174",
+    "hanzi": "商店",
+    "pinyin": "shāngdiàn",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "cửa hàng; tiệm",
+    "source": "Đề cương HSK 3.0, mục 174; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0175",
+    "hanzi": "上",
+    "pinyin": "shàng",
+    "partOfSpeech": "danh từ / động từ",
+    "partOfSpeechSource": "名、动",
+    "meaningVi": "(hình thức kết hợp) trên; phía trên; trước",
+    "source": "Đề cương HSK 3.0, mục 175; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0176",
+    "hanzi": "上班",
+    "pinyin": "shàngbān",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "đi làm",
+    "source": "Đề cương HSK 3.0, mục 176; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0177",
+    "hanzi": "上课",
+    "pinyin": "shàngkè",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "đi học",
+    "source": "Đề cương HSK 3.0, mục 177; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0178",
+    "hanzi": "上午",
+    "pinyin": "shàngwǔ",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "buổi sáng",
+    "source": "Đề cương HSK 3.0, mục 178; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0179",
+    "hanzi": "上学",
+    "pinyin": "shàngxué",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "đi học",
+    "source": "Đề cương HSK 3.0, mục 179; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0180",
+    "hanzi": "少",
+    "pinyin": "shǎo",
+    "partOfSpeech": "động từ / tính từ",
+    "partOfSpeechSource": "形、动",
+    "meaningVi": "ít",
+    "source": "Đề cương HSK 3.0, mục 180; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0181",
+    "hanzi": "谁",
+    "pinyin": "shéi/shuí",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "ai",
+    "source": "Đề cương HSK 3.0, mục 181; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0182",
+    "hanzi": "什么",
+    "pinyin": "shénme",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "gì?",
+    "source": "Đề cương HSK 3.0, mục 182; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0183",
+    "hanzi": "生病",
+    "pinyin": "shēngbìng",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "bị ốm",
+    "source": "Đề cương HSK 3.0, mục 183; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0184",
+    "hanzi": "十",
+    "pinyin": "shí",
+    "partOfSpeech": "số từ",
+    "partOfSpeechSource": "数",
+    "meaningVi": "mười",
+    "source": "Đề cương HSK 3.0, mục 184; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0185",
+    "hanzi": "时候",
+    "pinyin": "shíhou",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "thời gian",
+    "source": "Đề cương HSK 3.0, mục 185; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0186",
+    "hanzi": "时间",
+    "pinyin": "shíjiān",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "(khái niệm) thời gian",
+    "source": "Đề cương HSK 3.0, mục 186; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0187",
+    "hanzi": "事",
+    "pinyin": "shì",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "sự việc",
+    "source": "Đề cương HSK 3.0, mục 187; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0188",
+    "hanzi": "是",
+    "pinyin": "shì",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "là (chỉ theo sau bởi danh từ)",
+    "source": "Đề cương HSK 3.0, mục 188; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0189",
+    "hanzi": "手机",
+    "pinyin": "shǒujī",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "điện thoại di động",
+    "source": "Đề cương HSK 3.0, mục 189; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0190",
+    "hanzi": "书",
+    "pinyin": "shū",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "sách",
+    "source": "Đề cương HSK 3.0, mục 190; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0191",
+    "hanzi": "书店",
+    "pinyin": "shūdiàn",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "nhà sách",
+    "source": "Đề cương HSK 3.0, mục 191; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0192",
+    "hanzi": "水",
+    "pinyin": "shuǐ",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "nước",
+    "source": "Đề cương HSK 3.0, mục 192; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0193",
+    "hanzi": "水果",
+    "pinyin": "shuǐguǒ",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "trái cây",
+    "source": "Đề cương HSK 3.0, mục 193; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0194",
+    "hanzi": "睡",
+    "pinyin": "shuì",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "ngủ",
+    "source": "Đề cương HSK 3.0, mục 194; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0195",
+    "hanzi": "睡觉",
+    "pinyin": "shuìjiào",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "đi ngủ",
+    "source": "Đề cương HSK 3.0, mục 195; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0196",
+    "hanzi": "说",
+    "pinyin": "shuō",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "nói; trò chuyện; nói ra",
+    "source": "Đề cương HSK 3.0, mục 196; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0197",
+    "hanzi": "说话",
+    "pinyin": "shuōhuà",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "nói",
+    "source": "Đề cương HSK 3.0, mục 197; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0198",
+    "hanzi": "四",
+    "pinyin": "sì",
+    "partOfSpeech": "số từ",
+    "partOfSpeechSource": "数",
+    "meaningVi": "bốn",
+    "source": "Đề cương HSK 3.0, mục 198; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0199",
+    "hanzi": "岁",
+    "pinyin": "suì",
+    "partOfSpeech": "lượng từ",
+    "partOfSpeechSource": "量",
+    "meaningVi": "lượng từ cho năm (tuổi)",
+    "source": "Đề cương HSK 3.0, mục 199; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0200",
+    "hanzi": "他",
+    "pinyin": "tā",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "anh ấy; ông ấy (dùng cho bất kỳ giới tính nào khi giới tính không được biết hoặc không quan trọng)",
+    "source": "Đề cương HSK 3.0, mục 200; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0201",
+    "hanzi": "它",
+    "pinyin": "tā",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "nó",
+    "source": "Đề cương HSK 3.0, mục 201; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0202",
+    "hanzi": "她",
+    "pinyin": "tā",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "cô ấy",
+    "source": "Đề cương HSK 3.0, mục 202; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0203",
+    "hanzi": "他们",
+    "pinyin": "tāmen",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "họ; bọn họ",
+    "source": "Đề cương HSK 3.0, mục 203; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0204",
+    "hanzi": "它们",
+    "pinyin": "tāmen",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "chúng; chúng nó",
+    "source": "Đề cương HSK 3.0, mục 204; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0205",
+    "hanzi": "她们",
+    "pinyin": "tāmen",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "họ; các cô ấy (nữ)",
+    "source": "Đề cương HSK 3.0, mục 205; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0206",
+    "hanzi": "太",
+    "pinyin": "tài",
+    "partOfSpeech": "phó từ",
+    "partOfSpeechSource": "副",
+    "meaningVi": "rất",
+    "source": "Đề cương HSK 3.0, mục 206; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0207",
+    "hanzi": "天",
+    "pinyin": "tiān",
+    "partOfSpeech": "danh từ / lượng từ",
+    "partOfSpeechSource": "名、量",
+    "meaningVi": "ngày",
+    "source": "Đề cương HSK 3.0, mục 207; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0208",
+    "hanzi": "天气",
+    "pinyin": "tiānqì",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "thời tiết",
+    "source": "Đề cương HSK 3.0, mục 208; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0209",
+    "hanzi": "听",
+    "pinyin": "tīng",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "nghe",
+    "source": "Đề cương HSK 3.0, mục 209; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0210",
+    "hanzi": "听见",
+    "pinyin": "tīngjiàn",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "nghe thấy",
+    "source": "Đề cương HSK 3.0, mục 210; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0211",
+    "hanzi": "同学",
+    "pinyin": "tóngxué",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "học cùng trường",
+    "source": "Đề cương HSK 3.0, mục 211; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0212",
+    "hanzi": "外",
+    "pinyin": "wài",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "bên ngoài",
+    "source": "Đề cương HSK 3.0, mục 212; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0213",
+    "hanzi": "外边",
+    "pinyin": "wàibian",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "bên ngoài",
+    "source": "Đề cương HSK 3.0, mục 213; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0214",
+    "hanzi": "玩",
+    "pinyin": "wán",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "chơi",
+    "source": "Đề cương HSK 3.0, mục 214; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0215",
+    "hanzi": "晚",
+    "pinyin": "wǎn",
+    "partOfSpeech": "tính từ",
+    "partOfSpeechSource": "形",
+    "meaningVi": "buổi tối",
+    "source": "Đề cương HSK 3.0, mục 215; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0216",
+    "hanzi": "晚饭",
+    "pinyin": "wǎnfàn",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "bữa tối",
+    "source": "Đề cương HSK 3.0, mục 216; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0217",
+    "hanzi": "晚上",
+    "pinyin": "wǎnshang",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "buổi tối",
+    "source": "Đề cương HSK 3.0, mục 217; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0218",
+    "hanzi": "喂",
+    "pinyin": "wèi",
+    "partOfSpeech": "thán từ",
+    "partOfSpeechSource": "叹",
+    "meaningVi": "này",
+    "source": "Đề cương HSK 3.0, mục 218; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0219",
+    "hanzi": "问",
+    "pinyin": "wèn",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "hỏi; thắc mắc",
+    "source": "Đề cương HSK 3.0, mục 219; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0220",
+    "hanzi": "问题",
+    "pinyin": "wèntí",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "câu hỏi",
+    "source": "Đề cương HSK 3.0, mục 220; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0221",
+    "hanzi": "我",
+    "pinyin": "wǒ",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "tôi; mình; của tôi",
+    "source": "Đề cương HSK 3.0, mục 221; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0222",
+    "hanzi": "我们",
+    "pinyin": "wǒmen",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "chúng tôi; chúng ta; bản thân chúng ta; của chúng tôi",
+    "source": "Đề cương HSK 3.0, mục 222; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0223",
+    "hanzi": "五",
+    "pinyin": "wǔ",
+    "partOfSpeech": "số từ",
+    "partOfSpeechSource": "数",
+    "meaningVi": "năm",
+    "source": "Đề cương HSK 3.0, mục 223; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0224",
+    "hanzi": "午饭",
+    "pinyin": "wǔfàn",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "bữa trưa",
+    "source": "Đề cương HSK 3.0, mục 224; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0225",
+    "hanzi": "喜欢",
+    "pinyin": "xǐhuan",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "thích; ưa thích",
+    "source": "Đề cương HSK 3.0, mục 225; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0226",
+    "hanzi": "下",
+    "pinyin": "xià",
+    "partOfSpeech": "danh từ / động từ / lượng từ",
+    "partOfSpeechSource": "名、动、量",
+    "meaningVi": "xuống",
+    "source": "Đề cương HSK 3.0, mục 226; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0227",
+    "hanzi": "下雨",
+    "pinyin": "xià yǔ",
+    "partOfSpeech": "từ / cụm từ",
+    "partOfSpeechSource": "",
+    "meaningVi": "trời mưa",
+    "source": "Đề cương HSK 3.0, mục 227; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0228",
+    "hanzi": "下班",
+    "pinyin": "xiàbān",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "tan làm",
+    "source": "Đề cương HSK 3.0, mục 228; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0229",
+    "hanzi": "下课",
+    "pinyin": "xiàkè",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "tan học",
+    "source": "Đề cương HSK 3.0, mục 229; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0230",
+    "hanzi": "下午",
+    "pinyin": "xiàwǔ",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "buổi chiều",
+    "source": "Đề cương HSK 3.0, mục 230; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0231",
+    "hanzi": "先生",
+    "pinyin": "xiānsheng",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "giáo viên",
+    "source": "Đề cương HSK 3.0, mục 231; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0232",
+    "hanzi": "现在",
+    "pinyin": "xiànzài",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "bây giờ",
+    "source": "Đề cương HSK 3.0, mục 232; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0233",
+    "hanzi": "想",
+    "pinyin": "xiǎng",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "nghĩ (về)",
+    "source": "Đề cương HSK 3.0, mục 233; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0234",
+    "hanzi": "小",
+    "pinyin": "xiǎo",
+    "partOfSpeech": "tính từ / tiền tố",
+    "partOfSpeechSource": "形、前缀",
+    "meaningVi": "nhỏ",
+    "source": "Đề cương HSK 3.0, mục 234; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0235",
+    "hanzi": "小朋友",
+    "pinyin": "xiǎopéngyǒu",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "trẻ em",
+    "source": "Đề cương HSK 3.0, mục 235; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0236",
+    "hanzi": "小时",
+    "pinyin": "xiǎoshí",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "giờ",
+    "source": "Đề cương HSK 3.0, mục 236; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0237",
+    "hanzi": "小学",
+    "pinyin": "xiǎoxué",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "trường tiểu học; trường cấp một",
+    "source": "Đề cương HSK 3.0, mục 237; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0238",
+    "hanzi": "小学生",
+    "pinyin": "xiǎoxuéshēng",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "học sinh tiểu học",
+    "source": "Đề cương HSK 3.0, mục 238; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0239",
+    "hanzi": "些",
+    "pinyin": "xiē",
+    "partOfSpeech": "lượng từ",
+    "partOfSpeechSource": "量",
+    "meaningVi": "lượng từ chỉ số lượng nhỏ lớn hơn 1: một ít, một vài, một số",
+    "source": "Đề cương HSK 3.0, mục 239; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0240",
+    "hanzi": "写",
+    "pinyin": "xiě",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "viết",
+    "source": "Đề cương HSK 3.0, mục 240; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0241",
+    "hanzi": "谢谢",
+    "pinyin": "xièxie",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "cảm ơn",
+    "source": "Đề cương HSK 3.0, mục 241; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0242",
+    "hanzi": "新",
+    "pinyin": "xīn",
+    "partOfSpeech": "tính từ",
+    "partOfSpeechSource": "形",
+    "meaningVi": "mới",
+    "source": "Đề cương HSK 3.0, mục 242; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0243",
+    "hanzi": "星期",
+    "pinyin": "xīngqī",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "tuần",
+    "source": "Đề cương HSK 3.0, mục 243; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0244",
+    "hanzi": "星期日",
+    "pinyin": "xīngqīrì",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "chủ nhật",
+    "source": "Đề cương HSK 3.0, mục 244; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0245",
+    "hanzi": "星期天",
+    "pinyin": "xīngqītiān",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "Chủ Nhật",
+    "source": "Đề cương HSK 3.0, mục 245; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0246",
+    "hanzi": "休息",
+    "pinyin": "xiūxi",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "nghỉ",
+    "source": "Đề cương HSK 3.0, mục 246; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0247",
+    "hanzi": "学",
+    "pinyin": "xué",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "học",
+    "source": "Đề cương HSK 3.0, mục 247; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0248",
+    "hanzi": "学生",
+    "pinyin": "xuéshēng",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "học sinh",
+    "source": "Đề cương HSK 3.0, mục 248; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0249",
+    "hanzi": "学习",
+    "pinyin": "xuéxí",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "học",
+    "source": "Đề cương HSK 3.0, mục 249; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0250",
+    "hanzi": "学校",
+    "pinyin": "xuéxiào",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "trường học",
+    "source": "Đề cương HSK 3.0, mục 250; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0251",
+    "hanzi": "雪",
+    "pinyin": "xuě",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "tuyết",
+    "source": "Đề cương HSK 3.0, mục 251; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0252",
+    "hanzi": "要",
+    "pinyin": "yào",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "muốn; cần; yêu cầu",
+    "source": "Đề cương HSK 3.0, mục 252; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0253",
+    "hanzi": "也",
+    "pinyin": "yě",
+    "partOfSpeech": "phó từ",
+    "partOfSpeechSource": "副",
+    "meaningVi": "(phó từ) cũng; vừa ... vừa ... (chỉ dùng trước vị ngữ)",
+    "source": "Đề cương HSK 3.0, mục 253; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0254",
+    "hanzi": "一",
+    "pinyin": "yī",
+    "partOfSpeech": "số từ",
+    "partOfSpeechSource": "数",
+    "meaningVi": "một",
+    "source": "Đề cương HSK 3.0, mục 254; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0255",
+    "hanzi": "衣服",
+    "pinyin": "yīfu",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "quần áo",
+    "source": "Đề cương HSK 3.0, mục 255; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0256",
+    "hanzi": "医生",
+    "pinyin": "yīshēng",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "bác sĩ",
+    "source": "Đề cương HSK 3.0, mục 256; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0257",
+    "hanzi": "医院",
+    "pinyin": "yīyuàn",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "bệnh viện",
+    "source": "Đề cương HSK 3.0, mục 257; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0258",
+    "hanzi": "一半",
+    "pinyin": "yíbàn",
+    "partOfSpeech": "số từ",
+    "partOfSpeechSource": "数",
+    "meaningVi": "một nửa",
+    "source": "Đề cương HSK 3.0, mục 258; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0259",
+    "hanzi": "一下",
+    "pinyin": "yíxià",
+    "partOfSpeech": "phó từ / số từ / lượng từ",
+    "partOfSpeechSource": "数量、（副）",
+    "meaningVi": "(dùng sau động từ) thử xem",
+    "source": "Đề cương HSK 3.0, mục 259; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0260",
+    "hanzi": "椅子",
+    "pinyin": "yǐzi",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "ghế",
+    "source": "Đề cương HSK 3.0, mục 260; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0261",
+    "hanzi": "一点儿",
+    "pinyin": "yìdiǎnr",
+    "partOfSpeech": "số từ / lượng từ",
+    "partOfSpeechSource": "数量",
+    "meaningVi": "biến thể er hoá của 一點|一点[yi1 dian3]",
+    "source": "Đề cương HSK 3.0, mục 261; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0262",
+    "hanzi": "一些",
+    "pinyin": "yìxiē",
+    "partOfSpeech": "số từ / lượng từ",
+    "partOfSpeechSource": "数量",
+    "meaningVi": "một số",
+    "source": "Đề cương HSK 3.0, mục 262; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0263",
+    "hanzi": "有",
+    "pinyin": "yǒu",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "có; có (gì đó)",
+    "source": "Đề cương HSK 3.0, mục 263; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0264",
+    "hanzi": "有的",
+    "pinyin": "yǒude",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "(có) một số (người...)",
+    "source": "Đề cương HSK 3.0, mục 264; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0265",
+    "hanzi": "有点儿",
+    "pinyin": "yǒudiǎnr",
+    "partOfSpeech": "phó từ",
+    "partOfSpeechSource": "副",
+    "meaningVi": "hơi",
+    "source": "Đề cương HSK 3.0, mục 265; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0266",
+    "hanzi": "有些",
+    "pinyin": "yǒuxiē",
+    "partOfSpeech": "phó từ / đại từ",
+    "partOfSpeechSource": "代、（副）",
+    "meaningVi": "một số",
+    "source": "Đề cương HSK 3.0, mục 266; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0267",
+    "hanzi": "雨",
+    "pinyin": "yǔ",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "mưa",
+    "source": "Đề cương HSK 3.0, mục 267; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0268",
+    "hanzi": "元",
+    "pinyin": "yuán",
+    "partOfSpeech": "lượng từ",
+    "partOfSpeechSource": "量",
+    "meaningVi": "đơn vị tiền tệ (đặc biệt là nhân dân tệ Trung Quốc)",
+    "source": "Đề cương HSK 3.0, mục 268; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0269",
+    "hanzi": "月",
+    "pinyin": "yuè",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "mặt trăng",
+    "source": "Đề cương HSK 3.0, mục 269; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0270",
+    "hanzi": "再",
+    "pinyin": "zài",
+    "partOfSpeech": "phó từ",
+    "partOfSpeechSource": "副",
+    "meaningVi": "lại; một lần nữa; tái-",
+    "source": "Đề cương HSK 3.0, mục 270; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0271",
+    "hanzi": "在",
+    "pinyin": "zài",
+    "partOfSpeech": "động từ / phó từ / giới từ",
+    "partOfSpeechSource": "动、介、副",
+    "meaningVi": "tồn tại; còn sống",
+    "source": "Đề cương HSK 3.0, mục 271; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0272",
+    "hanzi": "再见",
+    "pinyin": "zàijiàn",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "tạm biệt",
+    "source": "Đề cương HSK 3.0, mục 272; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0273",
+    "hanzi": "早",
+    "pinyin": "zǎo",
+    "partOfSpeech": "tính từ",
+    "partOfSpeechSource": "形",
+    "meaningVi": "sớm",
+    "source": "Đề cương HSK 3.0, mục 273; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0274",
+    "hanzi": "早饭",
+    "pinyin": "zǎofàn",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "bữa sáng",
+    "source": "Đề cương HSK 3.0, mục 274; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0275",
+    "hanzi": "早上",
+    "pinyin": "zǎoshang",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "buổi sáng sớm",
+    "source": "Đề cương HSK 3.0, mục 275; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0276",
+    "hanzi": "怎么",
+    "pinyin": "zěnme",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "như thế nào?",
+    "source": "Đề cương HSK 3.0, mục 276; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0277",
+    "hanzi": "怎么样",
+    "pinyin": "zěnmeyàng",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "như thế nào?",
+    "source": "Đề cương HSK 3.0, mục 277; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0278",
+    "hanzi": "找",
+    "pinyin": "zhǎo",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "cố gắng tìm",
+    "source": "Đề cương HSK 3.0, mục 278; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0279",
+    "hanzi": "这",
+    "pinyin": "zhè",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "(đại từ) này; những...này",
+    "source": "Đề cương HSK 3.0, mục 279; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0280",
+    "hanzi": "这边",
+    "pinyin": "zhèbiān",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "bên này",
+    "source": "Đề cương HSK 3.0, mục 280; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0281",
+    "hanzi": "这个",
+    "pinyin": "zhège",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "(đại từ) này",
+    "source": "Đề cương HSK 3.0, mục 281; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0282",
+    "hanzi": "这里",
+    "pinyin": "zhèlǐ",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "ở đây",
+    "source": "Đề cương HSK 3.0, mục 282; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0283",
+    "hanzi": "这儿",
+    "pinyin": "zhèr",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "ở đây",
+    "source": "Đề cương HSK 3.0, mục 283; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0284",
+    "hanzi": "这些",
+    "pinyin": "zhèxiē",
+    "partOfSpeech": "đại từ",
+    "partOfSpeechSource": "代",
+    "meaningVi": "những... này",
+    "source": "Đề cương HSK 3.0, mục 284; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0285",
+    "hanzi": "真",
+    "pinyin": "zhēn",
+    "partOfSpeech": "tính từ / phó từ",
+    "partOfSpeechSource": "副、（形）",
+    "meaningVi": "thật",
+    "source": "Đề cương HSK 3.0, mục 285; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0286",
+    "hanzi": "正在",
+    "pinyin": "zhèngzài",
+    "partOfSpeech": "phó từ",
+    "partOfSpeechSource": "副",
+    "meaningVi": "đang ở (thời điểm đó)",
+    "source": "Đề cương HSK 3.0, mục 286; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0287",
+    "hanzi": "只",
+    "pinyin": "zhī",
+    "partOfSpeech": "lượng từ",
+    "partOfSpeechSource": "量",
+    "meaningVi": "lượng từ cho chim và một số động vật, một trong một cặp, một số dụng cụ, đồ chứa, v.v.",
+    "source": "Đề cương HSK 3.0, mục 287; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0288",
+    "hanzi": "知道",
+    "pinyin": "zhīdào",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "biết; nhận thức được",
+    "source": "Đề cương HSK 3.0, mục 288; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0289",
+    "hanzi": "中国",
+    "pinyin": "Zhōngguó",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "Trung Quốc",
+    "source": "Đề cương HSK 3.0, mục 289; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0290",
+    "hanzi": "中文",
+    "pinyin": "Zhōngwén",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "ngôn ngữ Trung Quốc",
+    "source": "Đề cương HSK 3.0, mục 290; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0291",
+    "hanzi": "中午",
+    "pinyin": "zhōngwǔ",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "buổi trưa",
+    "source": "Đề cương HSK 3.0, mục 291; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0292",
+    "hanzi": "中学",
+    "pinyin": "zhōngxué",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "trường trung học",
+    "source": "Đề cương HSK 3.0, mục 292; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0293",
+    "hanzi": "中学生",
+    "pinyin": "zhōngxuéshēng",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "học sinh trung học",
+    "source": "Đề cương HSK 3.0, mục 293; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0294",
+    "hanzi": "住",
+    "pinyin": "zhù",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "sống",
+    "source": "Đề cương HSK 3.0, mục 294; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0295",
+    "hanzi": "桌子",
+    "pinyin": "zhuōzi",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "bàn",
+    "source": "Đề cương HSK 3.0, mục 295; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0296",
+    "hanzi": "字",
+    "pinyin": "zì",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "chữ",
+    "source": "Đề cương HSK 3.0, mục 296; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0297",
+    "hanzi": "昨天",
+    "pinyin": "zuótiān",
+    "partOfSpeech": "danh từ",
+    "partOfSpeechSource": "名",
+    "meaningVi": "hôm qua",
+    "source": "Đề cương HSK 3.0, mục 297; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0298",
+    "hanzi": "坐",
+    "pinyin": "zuò",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "ngồi",
+    "source": "Đề cương HSK 3.0, mục 298; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0299",
+    "hanzi": "做",
+    "pinyin": "zuò",
+    "partOfSpeech": "động từ",
+    "partOfSpeechSource": "动",
+    "meaningVi": "làm; sản xuất",
+    "source": "Đề cương HSK 3.0, mục 299; nghĩa tham khảo CVDICT"
+  },
+  {
+    "id": "hsk1-outline-0300",
+    "hanzi": "做饭",
+    "pinyin": "zuò fàn",
+    "partOfSpeech": "từ / cụm từ",
+    "partOfSpeechSource": "",
+    "meaningVi": "chuẩn bị bữa ăn",
+    "source": "Đề cương HSK 3.0, mục 300; nghĩa tham khảo CVDICT"
+  }
+]

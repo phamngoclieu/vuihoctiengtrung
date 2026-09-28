@@ -7,9 +7,11 @@ const routeModuleLoaders = {
   '/app/review': () => import('../pages/StudentDashboard.jsx'),
   '/app/progress': () => import('../pages/StudentDashboard.jsx'),
   '/app/lesson/1': () => import('../pages/LessonPage.jsx'),
+  '/app/vocabulary': () => import('../pages/VocabularyPage.jsx'),
   '/app/settings': () => import('../pages/AccountSettingsPage.jsx'),
   '/admin': () => import('../pages/AdminGradingPage.jsx'),
   '/admin/students': () => import('../pages/AdminUsersPage.jsx'),
+  '/admin/vocabulary-practice': () => import('../pages/AdminVocabularyPracticePage.jsx'),
   '/admin/settings': () => import('../pages/AccountSettingsPage.jsx'),
 }
 

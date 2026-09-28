@@ -9,9 +9,11 @@ const LandingPage = lazy(() => import('./pages/LandingPage.jsx'))
 const AuthPage = lazy(() => import('./pages/AuthPage.jsx'))
 const StudentDashboard = lazy(() => import('./pages/StudentDashboard.jsx'))
 const LessonPage = lazy(() => import('./pages/LessonPage.jsx'))
+const VocabularyPage = lazy(() => import('./pages/VocabularyPage.jsx'))
 const AdminGradingPage = lazy(() => import('./pages/AdminGradingPage.jsx'))
 const AccountSettingsPage = lazy(() => import('./pages/AccountSettingsPage.jsx'))
 const AdminUsersPage = lazy(() => import('./pages/AdminUsersPage.jsx'))
+const AdminVocabularyPracticePage = lazy(() => import('./pages/AdminVocabularyPracticePage.jsx'))
 
 function LoadingScreen() {
   const { l } = useLanguage()
@@ -31,8 +33,10 @@ function AppRouter() {
 
   if (import.meta.env.DEV && path === '/preview/student') return <StudentDashboard focusSection={query.get('section')} preview />
   if (import.meta.env.DEV && path === '/preview/lesson/1') return <LessonPage initialTab={initialTab} preview />
+  if (import.meta.env.DEV && path === '/preview/vocabulary') return <VocabularyPage preview />
   if (import.meta.env.DEV && path === '/preview/admin') return <AdminGradingPage preview />
   if (import.meta.env.DEV && path === '/preview/admin/users') return <AdminUsersPage preview />
+  if (import.meta.env.DEV && path === '/preview/admin/vocabulary-practice') return <AdminVocabularyPracticePage preview />
   if (import.meta.env.DEV && path === '/preview/settings') return <AccountSettingsPage mode={query.get('mode') === 'admin' ? 'admin' : 'student'} preview />
   if (path === '/auth' || isPasswordRecovery || isEmailConfirmation) return <AuthPage />
   if (path === '/') return <LandingPage configured={configured} />
@@ -41,8 +45,10 @@ function AppRouter() {
   if (profile?.locked_at) return <div className="account-blocked"><h1>{l('Tài khoản đang bị khóa', 'Account locked', '账户已锁定')}</h1><p>{l('Vui lòng liên hệ quản trị viên trong hệ thống để được hỗ trợ.', 'Contact an administrator in the system for support.', '请联系系统管理员获取帮助。')}</p></div>
   if (path === '/admin/settings' && ['owner', 'admin', 'teacher'].includes(profile?.role)) return <AccountSettingsPage mode="admin" />
   if (path === '/admin/students' && ['owner', 'admin', 'teacher'].includes(profile?.role)) return <AdminUsersPage />
+  if (path === '/admin/vocabulary-practice' && ['owner', 'admin', 'teacher'].includes(profile?.role)) return <AdminVocabularyPracticePage />
   if (path.startsWith('/admin') && ['owner', 'admin', 'teacher'].includes(profile?.role)) return <AdminGradingPage />
   if (path === '/app/settings') return <AccountSettingsPage />
+  if (path === '/app/vocabulary') return <VocabularyPage />
   if (path === '/app/lesson/1') return <LessonPage initialTab={initialTab} />
   if (path === '/app/progress') return <StudentDashboard focusSection="progress" />
   if (path === '/app/review') return <StudentDashboard focusSection="review" />

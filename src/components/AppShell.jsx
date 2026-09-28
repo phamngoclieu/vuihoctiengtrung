@@ -4,7 +4,6 @@ import {
   ChevronDown,
   CircleHelp,
   ClipboardCheck,
-  FileText,
   Gauge,
   Headphones,
   Home,
@@ -27,7 +26,7 @@ import NotificationsMenu from './NotificationsMenu.jsx'
 const studentItems = [
   { key: 'overview', icon: Home, path: '/app' },
   { key: 'lessons', icon: BookOpen, path: '/app/lesson/1' },
-  { key: 'vocabulary', icon: Languages, path: '/app/lesson/1?v=vocabulary' },
+  { key: 'vocabulary', icon: Languages, path: '/app/vocabulary' },
   { key: 'flashcards', icon: Sparkles, path: '/app/lesson/1?v=flashcards' },
   { key: 'listening', icon: Headphones, path: '/app/lesson/1?v=listening' },
   { key: 'shadowing', icon: Gauge, path: '/app/lesson/1?v=shadowing' },
@@ -39,6 +38,7 @@ const adminItems = [
   { key: 'overview', icon: Home, path: '/admin' },
   { key: 'content', icon: LibraryBig, path: '/admin/content' },
   { key: 'students', icon: Users, path: '/admin/students' },
+  { key: 'vocabularyPracticeResults', icon: Languages, path: '/admin/vocabulary-practice' },
   { key: 'grading', icon: ClipboardCheck, path: '/admin/grading' },
   { key: 'reports', icon: MessageSquareWarning, path: '/admin/reports' },
   { key: 'analytics', icon: BarChart3, path: '/admin/analytics' },
@@ -55,11 +55,13 @@ export default function AppShell({ children, mode = 'student', active = 'overvie
       if (path === '/app') return navigate('/preview/student')
       if (path === '/app/lesson/1') return navigate('/preview/lesson/1')
       if (path.startsWith('/app/lesson/1?')) return navigate(`/preview/lesson/1?${path.split('?')[1]}`)
+      if (path === '/app/vocabulary') return navigate('/preview/vocabulary')
       if (path === '/app/settings') return navigate('/preview/settings')
       if (path === '/app/progress') return navigate('/preview/student?section=progress')
       if (path === '/app/review') return navigate('/preview/student?section=review')
       if (path === '/admin/settings') return navigate('/preview/settings?mode=admin')
       if (path === '/admin/students') return navigate('/preview/admin/users')
+      if (path === '/admin/vocabulary-practice') return navigate('/preview/admin/vocabulary-practice')
       if (path.startsWith('/admin')) return navigate('/preview/admin')
     }
     navigate(path)
@@ -110,7 +112,7 @@ export default function AppShell({ children, mode = 'student', active = 'overvie
       </div>
 
       <nav className="bottom-nav" aria-label={l('Điều hướng trên điện thoại', 'Mobile navigation', '移动端导航')}>
-        {(mode === 'admin' ? adminItems.slice(0, 5) : [studentItems[0], studentItems[1], { key: 'review', icon: FileText, path: '/app/review' }, studentItems[7], { key: 'settings', icon: Settings, path: '/app/settings' }]).map(({ key, icon: Icon, path }) => (
+        {(mode === 'admin' ? adminItems.slice(0, 5) : [studentItems[0], studentItems[1], studentItems[2], studentItems[7], { key: 'settings', icon: Settings, path: '/app/settings' }]).map(({ key, icon: Icon, path }) => (
           <button className={active === key ? 'is-active' : ''} key={key} onClick={() => go(path)} onFocus={() => preloadRoute(path)} onPointerEnter={() => preloadRoute(path)} type="button">
             <Icon size={21} />
             <span>{t(key)}</span>
