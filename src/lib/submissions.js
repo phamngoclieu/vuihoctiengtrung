@@ -15,15 +15,33 @@ export async function submitShadowing({ userId, lessonId, submissionType, record
     .upload(path, recording.blob, { contentType: recording.mimeType, upsert: false })
   if (uploadError) throw uploadError
 
-  const { error: insertError } = await client.from('shadowing_submissions').insert({
-    user_id: userId,
-    lesson_id: lessonId,
-    submission_type: submissionType,
-    storage_path: path,
-    mime_type: recording.mimeType,
-    size_bytes: recording.blob.size,
-  })
+  const { data, error: insertError } = await client
+    .from('shadowing_submissions')
+    .insert({
+      user_id: userId,
+      lesson_id: lessonId,
+      submission_type: submissionType,
+      storage_path: path,
+      mime_type: recording.mimeType,
+      size_bytes: recording.blob.size,
+    })
+    .select('id, submission_type, submitted_at, score, teacher_comment, graded_at')
+    .single()
   if (insertError) throw insertError
+  return data
+}
+
+export async function loadShadowingSubmissions({ userId, lessonId }) {
+  const client = requireSupabase()
+  const { data, error } = await client
+    .from('shadowing_submissions')
+    .select('id, submission_type, submitted_at, score, teacher_comment, graded_at')
+    .eq('user_id', userId)
+    .eq('lesson_id', lessonId)
+    .order('submitted_at', { ascending: true })
+
+  if (error) throw error
+  return data || []
 }
 
 export async function saveWritingDraft({ userId, lessonId, content }) {
@@ -39,10 +57,28 @@ export async function saveWritingDraft({ userId, lessonId, content }) {
 
 export async function submitWriting({ userId, lessonId, content }) {
   const client = requireSupabase()
-  const { error } = await client.from('writing_submissions').insert({
-    user_id: userId,
-    lesson_id: lessonId,
-    content,
-  })
+  const { data, error } = await client
+    .from('writing_submissions')
+    .insert({
+      user_id: userId,
+      lesson_id: lessonId,
+      content,
+    })
+    .select('id, content, submitted_at, score, teacher_comment, graded_at')
+    .single()
   if (error) throw error
+  return data
+}
+
+export async function loadWritingSubmission({ userId, lessonId }) {
+  const client = requireSupabase()
+  const { data, error } = await client
+    .from('writing_submissions')
+    .select('id, content, submitted_at, score, teacher_comment, graded_at')
+    .eq('user_id', userId)
+    .eq('lesson_id', lessonId)
+    .maybeSingle()
+
+  if (error) throw error
+  return data || null
 }

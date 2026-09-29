@@ -5,7 +5,7 @@ import { loadNotifications, markNotificationRead } from '../lib/notifications.js
 import { useLanguage } from '../lib/i18n.jsx'
 
 const previewNotifications = [
-  { id: 'preview-1', title: 'Bài shadowing đã được chấm', body: 'Bạn nhận được 9/10. Mở bài học để xem nhận xét.', read_at: null, created_at: new Date().toISOString() },
+  { id: 'preview-1', title: 'Bài luyện viết đã được chấm', body: 'Bạn nhận được 2/10. Mở bài học để xem nhận xét.', link: '/app/lesson/1?v=writing', read_at: null, created_at: new Date().toISOString() },
   { id: 'preview-2', title: 'Chào mừng đến LiuLiuLiu', body: 'Bắt đầu học HSK 1 từ Bài 1.', read_at: null, created_at: new Date().toISOString() },
 ]
 
@@ -58,7 +58,10 @@ export default function NotificationsMenu({ preview, onNavigate }) {
       }
     }
     setOpen(false)
-    if (item.link) onNavigate(item.link)
+    if (item.link) {
+      window.dispatchEvent(new CustomEvent('liuliuliu:refresh-submissions'))
+      onNavigate(item.link)
+    }
   }
 
   return (

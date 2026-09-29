@@ -6,6 +6,7 @@ import {
   Check,
   CheckCircle2,
   CircleAlert,
+  Clock3,
   Eye,
   FileAudio,
   Headphones,
@@ -27,7 +28,13 @@ import { navigate } from '../lib/hashRoute.js'
 import { useLanguage } from '../lib/i18n.jsx'
 import { useAuth } from '../auth/AuthProvider.jsx'
 import { useRecorder } from '../hooks/useRecorder.js'
-import { saveWritingDraft, submitShadowing, submitWriting } from '../lib/submissions.js'
+import {
+  loadShadowingSubmissions,
+  loadWritingSubmission,
+  saveWritingDraft,
+  submitShadowing,
+  submitWriting,
+} from '../lib/submissions.js'
 import {
   loadVocabularyProgress,
   loadWritingDraft,
@@ -355,7 +362,71 @@ function ListeningView() {
   )
 }
 
-function RecordingPanel({ item, preview }) {
+const previewWritingSubmission = {
+  id: 'preview-writing',
+  content: '老师，您好！',
+  submitted_at: '2026-08-13T05:00:00.000Z',
+  score: 2,
+  teacher_comment: 'Em cần viết đủ 5–8 câu và sử dụng ít nhất 5 từ hoặc cụm từ của Bài 1.',
+  graded_at: '2026-08-13T06:15:00.000Z',
+}
+
+const previewShadowingSubmissions = [
+  {
+    id: 'preview-shadowing-official',
+    submission_type: 'official',
+    submitted_at: '2026-08-13T05:00:00.000Z',
+    score: 9,
+    teacher_comment: 'Phát âm rõ và nhịp đọc tốt. Chú ý thêm thanh 3 trong từ 你好。',
+    graded_at: '2026-08-13T06:15:00.000Z',
+  },
+  {
+    id: 'preview-shadowing-composed',
+    submission_type: 'composed',
+    submitted_at: '2026-08-13T05:10:00.000Z',
+    score: null,
+    teacher_comment: null,
+    graded_at: null,
+  },
+]
+
+function formatSubmissionDate(value, language) {
+  if (!value) return ''
+  const date = new Date(value)
+  if (Number.isNaN(date.getTime())) return ''
+  const locale = language === 'zh' ? 'zh-CN' : language === 'en' ? 'en-GB' : 'vi-VN'
+  return new Intl.DateTimeFormat(locale, { dateStyle: 'medium', timeStyle: 'short' }).format(date)
+}
+
+function SubmissionFeedback({ submission, title }) {
+  const { language, l } = useLanguage()
+  if (!submission) return null
+  const isGraded = submission.score !== null && submission.score !== undefined && Boolean(submission.graded_at)
+
+  return (
+    <section className={`panel submission-feedback ${isGraded ? 'is-graded' : 'is-pending'}`}>
+      <div className="submission-feedback__header">
+        <span className="submission-feedback__icon">{isGraded ? <CheckCircle2 size={22} /> : <Clock3 size={22} />}</span>
+        <div>
+          <span className="eyebrow">{title}</span>
+          <h2>{isGraded ? l('Kết quả giáo viên chấm', 'Teacher feedback', '教师批改结果') : l('Đang chờ giáo viên chấm', 'Awaiting teacher grading', '等待教师批改')}</h2>
+        </div>
+        {isGraded ? <strong className="submission-feedback__score">{submission.score}<small>/10</small></strong> : <span className="submission-status submission-status--pending">{l('Đang chờ chấm', 'Pending', '待批改')}</span>}
+      </div>
+      {isGraded ? (
+        <div className="submission-feedback__comment">
+          <span>{l('Nhận xét của giáo viên', 'Teacher comment', '教师评语')}</span>
+          <p>{submission.teacher_comment || l('Giáo viên chưa để lại nhận xét.', 'The teacher did not leave a comment.', '教师未留下评语。')}</p>
+        </div>
+      ) : <p className="submission-feedback__pending-copy">{l('Bài đã được nộp thành công. Kết quả sẽ xuất hiện tại đây sau khi giáo viên chấm.', 'Your work was submitted successfully. The result will appear here after grading.', '作业已成功提交，教师批改后结果会显示在这里。')}</p>}
+      <small className="submission-feedback__time">
+        {isGraded ? l('Đã chấm', 'Graded', '批改时间') : l('Đã nộp', 'Submitted', '提交时间')}: {formatSubmissionDate(isGraded ? submission.graded_at : submission.submitted_at, language)}
+      </small>
+    </section>
+  )
+}
+
+function RecordingPanel({ item, preview, submission, onSubmitted }) {
   const recorder = useRecorder()
   const { user } = useAuth()
   const { l } = useLanguage()
@@ -370,7 +441,8 @@ function RecordingPanel({ item, preview }) {
     }
     setSubmitting(true)
     try {
-      await submitShadowing({ userId: user.id, lessonId: lessonOne.id, submissionType: item.type, recording: recorder.recording })
+      const created = await submitShadowing({ userId: user.id, lessonId: lessonOne.id, submissionType: item.type, recording: recorder.recording })
+      onSubmitted?.(created)
       setMessage(l('Đã nộp bài. Bạn không thể thay thế bản ghi chính thức này.', 'Submitted. This official recording cannot be replaced.', '已提交，正式录音无法替换。'))
     } catch (error) {
       setMessage(error.message || l('Không thể nộp bản ghi.', 'Unable to submit the recording.', '无法提交录音。'))
@@ -386,34 +458,111 @@ function RecordingPanel({ item, preview }) {
       {item.audio ? <audio controls preload="metadata" src={item.audio} /> : <button className="speaker-button" onClick={() => speakChinese(item.text, 0.72)} type="button"><Volume2 size={20} />{l('Nghe giọng phổ thông', 'Listen in Standard Mandarin', '听普通话发音')}</button>}
       <div className="reading-script"><strong lang="zh-CN">{item.text}</strong><span>{item.pinyin}</span></div>
       <div className="practice-zone"><div><Mic2 size={23} /><span><strong>{l('Tự luyện', 'Self-practice', '自主练习')}</strong><small>{l('Bản ghi chỉ nằm tạm trên thiết bị, không tải lên.', 'The practice recording stays temporarily on this device and is not uploaded.', '练习录音仅临时保存在本设备，不会上传。')}</small></span></div><div className="record-actions">{recorder.status === 'recording' ? <button className="button button--danger" onClick={recorder.stop} type="button"><Pause size={17} /> {l('Dừng thu', 'Stop', '停止录音')}</button> : <button className="button button--ghost" onClick={recorder.start} type="button"><Mic2 size={17} /> {recorder.recording ? l('Thu lại', 'Record again', '重新录音') : l('Bắt đầu thu', 'Start recording', '开始录音')}</button>}{recorder.recording ? <button className="button button--ghost" onClick={recorder.reset} type="button"><RotateCcw size={17} /> {l('Xóa bản luyện', 'Delete practice recording', '删除练习录音')}</button> : null}</div>{recorder.recording ? <audio controls src={recorder.recording.url} /> : null}{recorder.error ? <p className="form-message form-message--error">{recorder.error}</p> : null}</div>
-      <div className="submission-zone"><div><Send size={22} /><span><strong>{l('Nộp để giáo viên chấm', 'Submit for teacher grading', '提交给教师批改')}</strong><small>{l('Điểm 0–10 và nhận xét riêng cho loại bài này.', 'A 0–10 score and separate feedback for this task type.', '本作业将获得0–10分及单独评语。')}</small></span></div><button className="button button--primary" disabled={!recorder.recording || submitting} onClick={submit} type="button">{submitting ? l('Đang nộp…', 'Submitting…', '正在提交…') : l('Nộp bản ghi này', 'Submit this recording', '提交此录音')}</button></div>
+      <div className="submission-zone"><div><Send size={22} /><span><strong>{l('Nộp để giáo viên chấm', 'Submit for teacher grading', '提交给教师批改')}</strong><small>{l('Điểm 0–10 và nhận xét riêng cho loại bài này.', 'A 0–10 score and separate feedback for this task type.', '本作业将获得0–10分及单独评语。')}</small></span></div><button className="button button--primary" disabled={!recorder.recording || submitting || Boolean(submission)} onClick={submit} type="button">{submission ? l('Đã nộp', 'Submitted', '已提交') : submitting ? l('Đang nộp…', 'Submitting…', '正在提交…') : l('Nộp bản ghi này', 'Submit this recording', '提交此录音')}</button></div>
       {message ? <p className="form-message">{message}</p> : null}
     </article>
   )
 }
 
 function ShadowingView({ preview }) {
-  return <div className="content-stack"><RecordingPanel item={lessonOne.shadowing.official} preview={preview} /><RecordingPanel item={lessonOne.shadowing.composed} preview={preview} /></div>
+  const { user } = useAuth()
+  const { l } = useLanguage()
+  const [submissions, setSubmissions] = useState(preview ? previewShadowingSubmissions : [])
+  const [loading, setLoading] = useState(!preview)
+  const [loadError, setLoadError] = useState(false)
+
+  useEffect(() => {
+    if (preview || !user) {
+      setLoading(false)
+      return undefined
+    }
+    let active = true
+    async function refreshSubmissions() {
+      setLoading(true)
+      try {
+        const rows = await loadShadowingSubmissions({ userId: user.id, lessonId: lessonOne.id })
+        if (active) {
+          setSubmissions(rows)
+          setLoadError(false)
+        }
+      } catch {
+        if (active) setLoadError(true)
+      } finally {
+        if (active) setLoading(false)
+      }
+    }
+    refreshSubmissions()
+    window.addEventListener('liuliuliu:refresh-submissions', refreshSubmissions)
+    return () => {
+      active = false
+      window.removeEventListener('liuliuliu:refresh-submissions', refreshSubmissions)
+    }
+  }, [preview, user])
+
+  function submissionFor(type) {
+    return submissions.find((entry) => entry.submission_type === type) || null
+  }
+
+  function rememberSubmission(created) {
+    setSubmissions((current) => [...current.filter((entry) => entry.submission_type !== created.submission_type), created])
+  }
+
+  return (
+    <div className="content-stack">
+      {loading ? <p className="form-message">{l('Đang tải kết quả chấm…', 'Loading grading results…', '正在加载批改结果…')}</p> : null}
+      {loadError ? <p className="form-message form-message--error">{l('Chưa thể tải kết quả chấm. Vui lòng kiểm tra kết nối mạng.', 'Unable to load grading results. Check your connection.', '无法加载批改结果，请检查网络连接。')}</p> : null}
+      {submissions.map((submission) => <SubmissionFeedback key={submission.id} submission={submission} title={submission.submission_type === 'official' ? l('Bài chính thức', 'Official task', '正式作业') : l('Bài tự biên soạn', 'Composed task', '自编作业')} />)}
+      <RecordingPanel item={lessonOne.shadowing.official} onSubmitted={rememberSubmission} preview={preview} submission={submissionFor('official')} />
+      <RecordingPanel item={lessonOne.shadowing.composed} onSubmitted={rememberSubmission} preview={preview} submission={submissionFor('composed')} />
+    </div>
+  )
 }
 
 function WritingView({ preview }) {
   const { user } = useAuth()
   const { language, l } = useLanguage()
   const [draft, setDraft] = useState('')
+  const [submission, setSubmission] = useState(preview ? previewWritingSubmission : null)
   const [message, setMessage] = useState(null)
   const [busy, setBusy] = useState(false)
+  const [loading, setLoading] = useState(!preview)
+  const [loadError, setLoadError] = useState(false)
 
   useEffect(() => {
     if (preview) {
       setDraft(localStorage.getItem('liuliuliu-preview-writing-draft') || '')
+      setLoading(false)
       return undefined
     }
-    if (!user) return undefined
+    if (!user) {
+      setLoading(false)
+      return undefined
+    }
     let active = true
-    loadWritingDraft({ userId: user.id })
-      .then((content) => active && setDraft(content))
-      .catch(() => active && setMessage(l('Chưa thể tải bản nháp đã lưu.', 'Unable to load the saved draft.', '无法加载已保存的草稿。')))
-    return () => { active = false }
+    async function refreshWriting() {
+      setLoading(true)
+      try {
+        const [content, savedSubmission] = await Promise.all([
+          loadWritingDraft({ userId: user.id }),
+          loadWritingSubmission({ userId: user.id, lessonId: lessonOne.id }),
+        ])
+        if (active) {
+          setDraft(content)
+          setSubmission(savedSubmission)
+          setLoadError(false)
+        }
+      } catch {
+        if (active) setLoadError(true)
+      } finally {
+        if (active) setLoading(false)
+      }
+    }
+    refreshWriting()
+    window.addEventListener('liuliuliu:refresh-submissions', refreshWriting)
+    return () => {
+      active = false
+      window.removeEventListener('liuliuliu:refresh-submissions', refreshWriting)
+    }
   }, [preview, user])
 
   async function save() {
@@ -429,13 +578,18 @@ function WritingView({ preview }) {
   async function submit() {
     if (preview || !user) { setMessage(l('Bản xem trước không gửi bài. Khi đăng nhập thật, bài chính thức chỉ được nộp một lần.', 'Preview mode does not submit work. After sign-in, the official task can be submitted once.', '预览模式不会提交作业。登录后，正式作业只能提交一次。')); return }
     setBusy(true)
-    try { await submitWriting({ userId: user.id, lessonId: lessonOne.id, content: draft }); setMessage(l('Đã nộp bài viết. Bài chính thức không thể sửa hoặc xóa.', 'Writing submitted. The official submission cannot be edited or deleted.', '写作已提交，正式作业无法修改或删除。')) } catch (error) { setMessage(error.message) } finally { setBusy(false) }
+    try { const created = await submitWriting({ userId: user.id, lessonId: lessonOne.id, content: draft }); setSubmission(created); setMessage(l('Đã nộp bài viết. Bài chính thức không thể sửa hoặc xóa.', 'Writing submitted. The official submission cannot be edited or deleted.', '写作已提交，正式作业无法修改或删除。')) } catch (error) { setMessage(error.message) } finally { setBusy(false) }
   }
 
   return (
-    <div className="writing-layout">
-      <section className="panel writing-prompt"><span className="eyebrow">{l('Chủ đề Bài 1', 'Lesson 1 topic', '第一课主题')}</span><h2>{l('Ngày đầu tiên đến lớp', 'The first day of class', '上课第一天')}</h2><p>{language === 'vi' ? lessonOne.writing.promptVi : language === 'en' ? lessonOne.writing.promptEn : '以第一天上课为背景，写一段5至8句的简短问候对话。请使用合适的问候语、“您”或“们”、感谢语和告别语。'}</p><ul>{language === 'vi' ? lessonOne.writing.requirements.map((item) => <li key={item}><Check size={17} />{item}</li>) : [l('', '5–8 sentences', '5至8句'), l('', 'Simplified Chinese characters', '使用简体汉字'), l('', 'Use at least 5 words or phrases from Lesson 1', '至少使用5个第一课的词语')].map((item) => <li key={item}><Check size={17} />{item}</li>)}</ul><div className="no-sample"><MessageSquareText size={20} /><span>{l('Không có bài mẫu. Giáo viên sẽ chấm theo thang 10 và để lại nhận xét.', 'No sample answer is provided. The teacher will grade it on a 10-point scale and leave feedback.', '不提供范文。教师将按10分制评分并留下评语。')}</span></div></section>
-      <section className="panel writing-editor"><div className="panel-heading"><div><span className="eyebrow">{l('Tự luyện', 'Self-practice', '自主练习')}</span><h2>{l('Bản nháp của tôi', 'My draft', '我的草稿')}</h2></div><span>{draft.length} {l('ký tự', 'characters', '字')}</span></div><textarea onChange={(event) => setDraft(event.target.value)} placeholder="在这里写……" value={draft} /><div className="writing-editor__actions"><button className="button button--ghost" disabled={!draft.trim() || busy} onClick={save} type="button"><Save size={17} /> {l('Lưu bản nháp', 'Save draft', '保存草稿')}</button><button className="button button--primary" disabled={!draft.trim() || busy} onClick={submit} type="button"><Send size={17} /> {l('Nộp để chấm', 'Submit for grading', '提交批改')}</button></div>{message ? <p className="form-message">{message}</p> : null}</section>
+    <div className="content-stack">
+      {loading ? <p className="form-message">{l('Đang tải kết quả chấm…', 'Loading grading results…', '正在加载批改结果…')}</p> : null}
+      {loadError ? <p className="form-message form-message--error">{l('Chưa thể tải bài đã nộp và kết quả chấm. Vui lòng kiểm tra kết nối mạng.', 'Unable to load your submission and grading result. Check your connection.', '无法加载已提交作业和批改结果，请检查网络连接。')}</p> : null}
+      <SubmissionFeedback submission={submission} title={l('Bài luyện viết', 'Writing task', '写作作业')} />
+      <div className="writing-layout">
+        <section className="panel writing-prompt"><span className="eyebrow">{l('Chủ đề Bài 1', 'Lesson 1 topic', '第一课主题')}</span><h2>{l('Ngày đầu tiên đến lớp', 'The first day of class', '上课第一天')}</h2><p>{language === 'vi' ? lessonOne.writing.promptVi : language === 'en' ? lessonOne.writing.promptEn : '以第一天上课为背景，写一段5至8句的简短问候对话。请使用合适的问候语、“您”或“们”、感谢语和告别语。'}</p><ul>{language === 'vi' ? lessonOne.writing.requirements.map((item) => <li key={item}><Check size={17} />{item}</li>) : [l('', '5–8 sentences', '5至8句'), l('', 'Simplified Chinese characters', '使用简体汉字'), l('', 'Use at least 5 words or phrases from Lesson 1', '至少使用5个第一课的词语')].map((item) => <li key={item}><Check size={17} />{item}</li>)}</ul><div className="no-sample"><MessageSquareText size={20} /><span>{l('Không có bài mẫu. Giáo viên sẽ chấm theo thang 10 và để lại nhận xét.', 'No sample answer is provided. The teacher will grade it on a 10-point scale and leave feedback.', '不提供范文。教师将按10分制评分并留下评语。')}</span></div></section>
+        <section className="panel writing-editor"><div className="panel-heading"><div><span className="eyebrow">{l('Tự luyện', 'Self-practice', '自主练习')}</span><h2>{l('Bản nháp của tôi', 'My draft', '我的草稿')}</h2></div><span>{draft.length} {l('ký tự', 'characters', '字')}</span></div><textarea onChange={(event) => setDraft(event.target.value)} placeholder="在这里写……" value={draft} /><div className="writing-editor__actions"><button className="button button--ghost" disabled={!draft.trim() || busy} onClick={save} type="button"><Save size={17} /> {l('Lưu bản nháp', 'Save draft', '保存草稿')}</button><button className="button button--primary" disabled={!draft.trim() || busy || Boolean(submission)} onClick={submit} type="button"><Send size={17} /> {submission ? l('Đã nộp', 'Submitted', '已提交') : l('Nộp để chấm', 'Submit for grading', '提交批改')}</button></div>{message ? <p className="form-message">{message}</p> : null}</section>
+      </div>
     </div>
   )
 }

@@ -58,4 +58,16 @@ describe('nội dung HSK 1 · Bài 1', () => {
     expect(schema).toContain('alter table public.shadowing_submissions enable row level security')
     expect(schema).toContain('alter table public.writing_submissions enable row level security')
   })
+
+  it('cho học viên xem điểm và nhận xét của bài đã nộp', () => {
+    const page = readFileSync(resolve('src/pages/LessonPage.jsx'), 'utf8')
+    const submissions = readFileSync(resolve('src/lib/submissions.js'), 'utf8')
+    const notifications = readFileSync(resolve('src/components/NotificationsMenu.jsx'), 'utf8')
+    expect(submissions).toContain('loadShadowingSubmissions')
+    expect(submissions).toContain('loadWritingSubmission')
+    expect(submissions).toContain('teacher_comment')
+    expect(page).toContain('SubmissionFeedback')
+    expect(page).toContain('Nhận xét của giáo viên')
+    expect(notifications).toContain('liuliuliu:refresh-submissions')
+  })
 })

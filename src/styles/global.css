@@ -443,6 +443,20 @@ h1, h2, h3, p { margin-top: 0; }
 .practice-zone small, .submission-zone small { color: var(--muted); font-size: 10px; }
 .record-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 8px; }
 .submission-zone { display: flex; justify-content: space-between; align-items: center; gap: 20px; background: #fffafa; }
+.submission-feedback { padding: 24px 26px; border-left: 3px solid var(--red); }
+.submission-feedback.is-graded { border-left-color: var(--green); background: linear-gradient(110deg, #f7fcf8 0%, #fff 46%); }
+.submission-feedback.is-pending { background: linear-gradient(110deg, #fff8f8 0%, #fff 46%); }
+.submission-feedback__header { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 14px; }
+.submission-feedback__header h2 { margin: 3px 0 0; font-size: 19px; }
+.submission-feedback__icon { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; background: var(--red-soft); color: var(--red); }
+.submission-feedback.is-graded .submission-feedback__icon { background: #e9f7ed; color: var(--green); }
+.submission-feedback__score { display: flex; align-items: baseline; color: var(--green); font-size: 32px; line-height: 1; }
+.submission-feedback__score small { font-size: 14px; }
+.submission-feedback__comment { margin: 20px 0 12px; padding: 16px 18px; border: 1px solid #dcece0; background: #fff; }
+.submission-feedback__comment span { color: var(--green); font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.submission-feedback__comment p { margin: 7px 0 0; font-size: 13px; line-height: 1.7; white-space: pre-wrap; }
+.submission-feedback__pending-copy { margin: 18px 0 12px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+.submission-feedback__time { color: var(--muted); font-size: 10px; }
 .writing-layout { display: grid; grid-template-columns: minmax(280px, 0.8fr) minmax(400px, 1.2fr); gap: 18px; }
 .writing-prompt, .writing-editor { padding: 26px; }
 .writing-prompt > p { color: var(--muted); line-height: 1.8; }
@@ -638,6 +652,8 @@ h1, h2, h3, p { margin-top: 0; }
   .listening-track audio { width: 100%; }
   .track-transcript { grid-template-columns: 1fr; }
   .submission-zone { align-items: flex-start; flex-direction: column; }
+  .submission-feedback__header { grid-template-columns: auto minmax(0, 1fr); }
+  .submission-feedback__header > :last-child { grid-column: 2; justify-self: start; }
   .writing-layout { grid-template-columns: 1fr; }
   .admin-heading { align-items: flex-start; flex-direction: column; }
   .settings-grid { grid-template-columns: 1fr; }
@@ -711,6 +727,7 @@ h1, h2, h3, p { margin-top: 0; }
   .flashcard > strong { font-size: 90px; }
   .grammar-card { grid-template-columns: 1fr; padding: 20px; }
   .dialogue-card, .recording-panel, .writing-prompt, .writing-editor, .exercise-card { padding: 20px; }
+  .submission-feedback { padding: 20px; }
   .dialogue-lines button { grid-template-columns: 1fr auto; }
   .dialogue-lines .speaker { grid-column: 1 / -1; }
   .tongue-twister > div:not(.panel-heading) { grid-template-columns: 1fr; gap: 5px; }
