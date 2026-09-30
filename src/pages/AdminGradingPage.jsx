@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { CheckCircle2, ChevronLeft, ChevronRight, Clock3, Save } from 'lucide-react'
 import AppShell, { EmptyState } from '../components/AppShell.jsx'
-import { lessonOne } from '../data/lesson1.js'
+import { getHsk1Lesson } from '../data/hsk1Lessons.js'
 import { getShadowingPlaybackUrl, gradeSubmission, loadGradingQueue } from '../lib/grading.js'
 import { useLanguage } from '../lib/i18n.jsx'
 
@@ -27,6 +27,8 @@ export default function AdminGradingPage({ preview = false }) {
 
   const visibleQueue = queue.filter((item) => item.kind === activeType)
   const selected = visibleQueue.find((item) => item.key === selectedKey) || visibleQueue[0] || null
+  const selectedLessonNumber = Number(selected?.lesson_id?.match(/(\d+)$/)?.[1] || selected?.lesson?.match(/\d+/)?.[0] || 1)
+  const selectedLesson = getHsk1Lesson(selectedLessonNumber) || getHsk1Lesson(1)
   const pendingCount = queue.filter((item) => item.status === 'pending').length
   const gradedCount = queue.filter((item) => item.status === 'graded').length
   const typeLabel = (item) => item.kind === 'writing' ? t('writing') : item.submission_type === 'composed' || item.type === 'Đoạn tự biên soạn' ? l('Đoạn tự biên soạn', 'Composed passage', '自编段落') : l('Đoạn chính thức', 'Official passage', '正式段落')
@@ -95,12 +97,12 @@ export default function AdminGradingPage({ preview = false }) {
       {error ? <p className="form-message form-message--error">{error}</p> : null}
       <div className="grading-workspace">
         <section className="grading-list panel">
-          <div className="grading-filters"><select aria-label={l('Lọc theo bài', 'Filter by lesson', '按课程筛选')}><option>{l('Tất cả bài', 'All lessons', '全部课程')}</option><option>{l('Bài 1', 'Lesson 1', '第一课')}</option></select><select aria-label={l('Lọc theo trạng thái', 'Filter by status', '按状态筛选')}><option>{l('Tất cả trạng thái', 'All statuses', '全部状态')}</option><option>{l('Chờ chấm', 'Pending', '待批改')}</option><option>{l('Đã chấm', 'Graded', '已批改')}</option></select><select aria-label={l('Lọc theo học viên', 'Filter by student', '按学生筛选')}><option>{l('Tất cả học viên', 'All students', '全部学生')}</option></select></div>
+          <div className="grading-filters"><select aria-label={l('Lọc theo bài', 'Filter by lesson', '按课程筛选')}><option>{l('Tất cả bài', 'All lessons', '全部课程')}</option>{Array.from({ length: 15 }, (_, index) => <option key={index + 1}>{l(`Bài ${index + 1}`, `Lesson ${index + 1}`, `第${index + 1}课`)}</option>)}</select><select aria-label={l('Lọc theo trạng thái', 'Filter by status', '按状态筛选')}><option>{l('Tất cả trạng thái', 'All statuses', '全部状态')}</option><option>{l('Chờ chấm', 'Pending', '待批改')}</option><option>{l('Đã chấm', 'Graded', '已批改')}</option></select><select aria-label={l('Lọc theo học viên', 'Filter by student', '按学生筛选')}><option>{l('Tất cả học viên', 'All students', '全部学生')}</option></select></div>
           {loading ? <EmptyState title={l('Đang tải bài nộp…', 'Loading submissions…', '正在加载作业…')} description={l('Dữ liệu đang được đồng bộ từ hệ thống.', 'Data is syncing from the system.', '正在从系统同步数据。')} /> : visibleQueue.length ? (
             <>
               <div className="grading-table" role="table">
                 <div className="grading-table__head" role="row"><span>{t('roleStudent')}</span><span>{t('lessons')}</span><span>{l('Loại bài', 'Type', '作业类型')}</span><span>{l('Đã nộp', 'Submitted', '提交时间')}</span><span>{t('status')}</span><span /></div>
-                {visibleQueue.map((row) => <button className={selected?.key === row.key ? 'is-active' : ''} key={row.key} onClick={() => setSelectedKey(row.key)} role="row" type="button"><strong>{row.name}</strong><span>{l('Bài 1', 'Lesson 1', '第一课')}</span><span>{typeLabel(row)}</span><span>{row.submitted}</span><span className={`submission-status submission-status--${row.status}`}>{row.status === 'pending' ? <Clock3 size={15} /> : <CheckCircle2 size={15} />}{row.status === 'pending' ? l('Chờ chấm', 'Pending', '待批改') : l('Đã chấm', 'Graded', '已批改')}</span><ChevronRight size={17} /></button>)}
+                {visibleQueue.map((row) => <button className={selected?.key === row.key ? 'is-active' : ''} key={row.key} onClick={() => setSelectedKey(row.key)} role="row" type="button"><strong>{row.name}</strong><span>{row.lesson}</span><span>{typeLabel(row)}</span><span>{row.submitted}</span><span className={`submission-status submission-status--${row.status}`}>{row.status === 'pending' ? <Clock3 size={15} /> : <CheckCircle2 size={15} />}{row.status === 'pending' ? l('Chờ chấm', 'Pending', '待批改') : l('Đã chấm', 'Graded', '已批改')}</span><ChevronRight size={17} /></button>)}
               </div>
               <div className="table-pagination"><span>{l(`Hiển thị ${visibleQueue.length} kết quả`, `Showing ${visibleQueue.length} results`, `显示 ${visibleQueue.length} 条结果`)}</span><div><button disabled type="button"><ChevronLeft size={17} /></button><button className="is-active" type="button">1</button><button disabled type="button"><ChevronRight size={17} /></button></div></div>
             </>
@@ -110,11 +112,11 @@ export default function AdminGradingPage({ preview = false }) {
         <aside className="grading-panel panel">
           {selected ? (
             <>
-              <div className="grading-panel__student"><span className="avatar">{selected.name.split(' ').slice(-1)[0][0]}</span><div><strong>{selected.name}</strong><small>{l('Bài 1', 'Lesson 1', '第一课')} · {typeLabel(selected)}</small></div></div>
+              <div className="grading-panel__student"><span className="avatar">{selected.name.split(' ').slice(-1)[0][0]}</span><div><strong>{selected.name}</strong><small>{l(`Bài ${selectedLesson.number}`, `Lesson ${selectedLesson.number}`, `第${selectedLesson.number}课`)} · {typeLabel(selected)}</small></div></div>
               {activeType === 'shadowing' ? (
                 <>
                   <div className="grading-audio"><span className="eyebrow">{l('Nghe bài nộp', 'Listen to submission', '听取作业录音')}</span><h2>{typeLabel(selected)}</h2>{audioUrl ? <audio controls preload="metadata" src={audioUrl} /> : <p>{preview ? l('Bản xem trước không chứa bản ghi thật.', 'The preview contains no real recording.', '预览中不包含真实录音。') : l('Đang tạo liên kết nghe an toàn…', 'Creating a secure playback link…', '正在生成安全播放链接…')}</p>}</div>
-                  <div className="submission-script"><span>{l('Nội dung đoạn', 'Passage text', '段落内容')}</span><p lang="zh-CN">{selected.type === 'Đoạn tự biên soạn' ? lessonOne.shadowing.composed.text : lessonOne.shadowing.official.text}</p><small>{selected.type === 'Đoạn tự biên soạn' ? lessonOne.shadowing.composed.pinyin : lessonOne.shadowing.official.pinyin}</small></div>
+                  <div className="submission-script"><span>{l('Nội dung đoạn', 'Passage text', '段落内容')}</span><p lang="zh-CN">{selected.submission_type === 'composed' || selected.type === 'Đoạn tự biên soạn' ? selectedLesson.shadowing.composed.text : selectedLesson.shadowing.official.text}</p><small>{selected.submission_type === 'composed' || selected.type === 'Đoạn tự biên soạn' ? selectedLesson.shadowing.composed.pinyin : selectedLesson.shadowing.official.pinyin}</small></div>
                 </>
               ) : <div className="writing-submission"><span>{l('Bài viết đã nộp', 'Submitted writing', '已提交的作文')}</span><p lang="zh-CN">{selected.content}</p></div>}
 

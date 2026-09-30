@@ -28,7 +28,9 @@ export function navigate(path) {
 
 export function preloadRoute(path) {
   const pathname = path.split('?')[0]
-  const loader = routeModuleLoaders[pathname] || (pathname.startsWith('/admin') ? routeModuleLoaders['/admin'] : null)
+  const loader = routeModuleLoaders[pathname]
+    || (/^\/app\/lesson\/(?:[1-9]|1[0-5])$/.test(pathname) ? routeModuleLoaders['/app/lesson/1'] : null)
+    || (pathname.startsWith('/admin') ? routeModuleLoaders['/admin'] : null)
   if (!loader || preloadedRoutes.has(pathname)) return
   preloadedRoutes.add(pathname)
   loader().catch(() => preloadedRoutes.delete(pathname))

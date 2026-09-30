@@ -1,15 +1,21 @@
 import { requireSupabase } from './supabase.js'
 
-const lessonId = 'hsk1-lesson-01'
-const vocabularyPrefix = `${lessonId}-v-`
-const exercisePrefix = `${lessonId}-e-`
+const defaultLessonId = 'hsk1-lesson-01'
 
-export function vocabularyDatabaseId(wordId) {
-  return `${vocabularyPrefix}${wordId}`
+function vocabularyPrefix(lessonId = defaultLessonId) {
+  return `${lessonId}-v-`
 }
 
-export function exerciseDatabaseId(exerciseId) {
-  return `${exercisePrefix}${exerciseId}`
+function exercisePrefix(lessonId = defaultLessonId) {
+  return `${lessonId}-e-`
+}
+
+export function vocabularyDatabaseId(wordId, lessonId = defaultLessonId) {
+  return `${vocabularyPrefix(lessonId)}${wordId}`
+}
+
+export function exerciseDatabaseId(exerciseId, lessonId = defaultLessonId) {
+  return `${exercisePrefix(lessonId)}${exerciseId}`
 }
 
 function nextReviewDate(memoryStatus) {
@@ -20,26 +26,27 @@ function nextReviewDate(memoryStatus) {
   return date.toISOString()
 }
 
-export async function loadVocabularyProgress({ userId }) {
+export async function loadVocabularyProgress({ userId, lessonId = defaultLessonId }) {
   const client = requireSupabase()
+  const prefix = vocabularyPrefix(lessonId)
   const { data, error } = await client
     .from('user_vocabulary_progress')
     .select('vocabulary_id, memory_status, personal_note, review_count')
     .eq('user_id', userId)
-    .like('vocabulary_id', `${vocabularyPrefix}%`)
+    .like('vocabulary_id', `${prefix}%`)
 
   if (error) throw error
   return (data || []).map((row) => ({
     ...row,
-    wordId: row.vocabulary_id.slice(vocabularyPrefix.length),
+    wordId: row.vocabulary_id.slice(prefix.length),
   }))
 }
 
-export async function saveVocabularyProgress({ userId, wordId, memoryStatus = 'unseen', personalNote = '', reviewCount = 0 }) {
+export async function saveVocabularyProgress({ userId, lessonId = defaultLessonId, wordId, memoryStatus = 'unseen', personalNote = '', reviewCount = 0 }) {
   const client = requireSupabase()
   const { error } = await client.from('user_vocabulary_progress').upsert({
     user_id: userId,
-    vocabulary_id: vocabularyDatabaseId(wordId),
+    vocabulary_id: vocabularyDatabaseId(wordId, lessonId),
     memory_status: memoryStatus,
     personal_note: personalNote,
     next_review_at: nextReviewDate(memoryStatus),
@@ -50,11 +57,11 @@ export async function saveVocabularyProgress({ userId, wordId, memoryStatus = 'u
   if (error) throw error
 }
 
-export async function saveAssessmentAttempt({ userId, exerciseId, answers, score, maxScore }) {
+export async function saveAssessmentAttempt({ userId, lessonId = defaultLessonId, exerciseId, answers, score, maxScore }) {
   const client = requireSupabase()
   const { error } = await client.from('assessment_attempts').insert({
     user_id: userId,
-    exercise_id: exerciseDatabaseId(exerciseId),
+    exercise_id: exerciseDatabaseId(exerciseId, lessonId),
     answers,
     score,
     max_score: maxScore,
@@ -63,7 +70,7 @@ export async function saveAssessmentAttempt({ userId, exerciseId, answers, score
   if (error) throw error
 }
 
-export async function markLessonSection({ section }) {
+export async function markLessonSection({ lessonId = defaultLessonId, section }) {
   const client = requireSupabase()
   const { data, error } = await client.rpc('mark_lesson_section', {
     p_lesson_id: lessonId,
@@ -74,7 +81,7 @@ export async function markLessonSection({ section }) {
   return data
 }
 
-export async function loadWritingDraft({ userId }) {
+export async function loadWritingDraft({ userId, lessonId = defaultLessonId }) {
   const client = requireSupabase()
   const { data, error } = await client
     .from('writing_drafts')

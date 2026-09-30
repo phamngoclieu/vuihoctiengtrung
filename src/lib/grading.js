@@ -11,6 +11,11 @@ function studentName(profile) {
   return profile?.display_name || profile?.email || 'Học viên'
 }
 
+function lessonLabel(lessonId) {
+  const lessonNumber = Number(lessonId?.match(/(\d+)$/)?.[1])
+  return lessonNumber ? `Bài ${lessonNumber}` : lessonId
+}
+
 export async function loadGradingQueue() {
   const client = requireSupabase()
   const [shadowingResult, writingResult] = await Promise.all([
@@ -32,7 +37,7 @@ export async function loadGradingQueue() {
     key: `shadowing-${row.id}`,
     kind: 'shadowing',
     name: studentName(row.profiles),
-    lesson: row.lesson_id === 'hsk1-lesson-01' ? 'Bài 1' : row.lesson_id,
+    lesson: lessonLabel(row.lesson_id),
     type: row.submission_type === 'official' ? 'Đoạn chính thức' : 'Đoạn tự biên soạn',
     submitted: formatDate(row.submitted_at),
     status: row.graded_at ? 'graded' : 'pending',
@@ -42,7 +47,7 @@ export async function loadGradingQueue() {
     key: `writing-${row.id}`,
     kind: 'writing',
     name: studentName(row.profiles),
-    lesson: row.lesson_id === 'hsk1-lesson-01' ? 'Bài 1' : row.lesson_id,
+    lesson: lessonLabel(row.lesson_id),
     type: 'Luyện viết',
     submitted: formatDate(row.submitted_at),
     status: row.graded_at ? 'graded' : 'pending',

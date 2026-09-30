@@ -30,9 +30,13 @@ function AppRouter() {
   const [path, queryString = ''] = route.split('?')
   const query = new URLSearchParams(queryString)
   const initialTab = query.get('v') || 'vocabulary'
+  const lessonMatch = path.match(/^\/app\/lesson\/(\d+)$/)
+  const previewLessonMatch = path.match(/^\/preview\/lesson\/(\d+)$/)
+  const lessonNumber = lessonMatch ? Number(lessonMatch[1]) : null
+  const previewLessonNumber = previewLessonMatch ? Number(previewLessonMatch[1]) : null
 
   if (import.meta.env.DEV && path === '/preview/student') return <StudentDashboard focusSection={query.get('section')} preview />
-  if (import.meta.env.DEV && path === '/preview/lesson/1') return <LessonPage initialTab={initialTab} preview />
+  if (import.meta.env.DEV && previewLessonNumber >= 1 && previewLessonNumber <= 15) return <LessonPage initialTab={initialTab} lessonNumber={previewLessonNumber} preview />
   if (import.meta.env.DEV && path === '/preview/vocabulary') return <VocabularyPage preview />
   if (import.meta.env.DEV && path === '/preview/admin') return <AdminGradingPage preview />
   if (import.meta.env.DEV && path === '/preview/admin/users') return <AdminUsersPage preview />
@@ -49,7 +53,7 @@ function AppRouter() {
   if (path.startsWith('/admin') && ['owner', 'admin', 'teacher'].includes(profile?.role)) return <AdminGradingPage />
   if (path === '/app/settings') return <AccountSettingsPage />
   if (path === '/app/vocabulary') return <VocabularyPage />
-  if (path === '/app/lesson/1') return <LessonPage initialTab={initialTab} />
+  if (lessonNumber >= 1 && lessonNumber <= 15) return <LessonPage initialTab={initialTab} lessonNumber={lessonNumber} />
   if (path === '/app/progress') return <StudentDashboard focusSection="progress" />
   if (path === '/app/review') return <StudentDashboard focusSection="review" />
   if (path === '/app') return <StudentDashboard />

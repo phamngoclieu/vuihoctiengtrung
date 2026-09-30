@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import { ArrowRight, BookOpen, CheckSquare2, ClipboardClock, Flame, MessageCircleMore, Mic2, PenLine } from 'lucide-react'
 import AppShell from '../components/AppShell.jsx'
-import { lessonOne, lessonRoadmap } from '../data/lesson1.js'
+import { lessonOne } from '../data/lesson1.js'
+import { lessonRoadmap } from '../data/hsk1Lessons.js'
 import { navigate } from '../lib/hashRoute.js'
 import { useLanguage } from '../lib/i18n.jsx'
 import { useAuth } from '../auth/AuthProvider.jsx'
@@ -34,7 +35,7 @@ export default function StudentDashboard({ preview = false, focusSection = null 
   const { user, profile } = useAuth()
   const [data, setData] = useState(preview ? previewDashboard : emptyDashboard)
   const [error, setError] = useState(null)
-  const goToLesson = () => navigate(preview ? '/preview/lesson/1' : '/app/lesson/1')
+  const goToLesson = (lessonNumber = 1) => navigate(preview ? `/preview/lesson/${lessonNumber}` : `/app/lesson/${lessonNumber}`)
   const reviewWords = data.reviewWordIds.map((id) => lessonOne.vocabulary.find((word) => word.id === id)).filter(Boolean).slice(0, 3)
   const coursePercent = Math.round(data.completionPercent / lessonRoadmap.length)
   const feedbackScore = data.latestFeedback?.body?.match(/(\d+(?:\.\d+)?)\/10/)?.[1]
@@ -70,7 +71,7 @@ export default function StudentDashboard({ preview = false, focusSection = null 
       <div className="dashboard-grid">
         <section className="continue-panel panel">
           <div><span className="panel-label">{t('continueLesson')}</span><div className="continue-panel__title"><strong lang="zh-CN">你好</strong><span>nǐ hǎo</span></div><p>{language === 'en' ? lessonOne.titleEn : language === 'zh' ? lessonOne.title : lessonOne.titleVi}</p><div className="mini-progress"><span style={{ width: `${data.completionPercent}%` }} /></div><small>{data.completionPercent}% {l('hoàn thành', 'complete', '已完成')}</small></div>
-          <button className="button button--primary button--large" onClick={goToLesson} type="button">{t('continueLesson')} <ArrowRight size={18} /></button>
+          <button className="button button--primary button--large" onClick={() => goToLesson(1)} type="button">{t('continueLesson')} <ArrowRight size={18} /></button>
         </section>
 
         <section className="review-panel panel" id="dashboard-review">
@@ -81,8 +82,8 @@ export default function StudentDashboard({ preview = false, focusSection = null 
         </section>
 
         <section className="roadmap-panel panel">
-          <div className="panel-heading"><div><h2>{l('Lộ trình 15 bài học', '15-lesson roadmap', '十五课学习路线')}</h2><p>{l('Nội dung được mở sau khi hoàn tất đối chiếu nguồn.', 'Content opens after source verification is complete.', '内容完成资料核对后开放。')}</p></div><button className="button button--ghost button--small" onClick={goToLesson} type="button">{l('Xem Bài 1', 'View Lesson 1', '查看第一课')}</button></div>
-          <div className="roadmap">{lessonRoadmap.map((lesson) => <button aria-disabled={lesson.number !== 1} className={lesson.number === 1 ? 'is-current' : ''} key={lesson.id} onClick={lesson.number === 1 ? goToLesson : undefined} type="button"><span>{lesson.number}</span><small>{l(`Bài ${lesson.number}`, `Lesson ${lesson.number}`, `第${lesson.number}课`)}</small></button>)}</div>
+          <div className="panel-heading"><div><h2>{l('Lộ trình 15 bài học', '15-lesson roadmap', '十五课学习路线')}</h2><p>{l('Cả 15 bài đã được mở và biên soạn theo tài liệu HSK 1.', 'All 15 lessons are open and based on the HSK 1 source materials.', '十五课均已按照HSK一级资料编写并开放。')}</p></div><button className="button button--ghost button--small" onClick={() => goToLesson(1)} type="button">{l('Xem Bài 1', 'View Lesson 1', '查看第一课')}</button></div>
+          <div className="roadmap">{lessonRoadmap.map((lesson) => <button aria-label={l(`Mở Bài ${lesson.number}: ${lesson.titleVi}`, `Open Lesson ${lesson.number}: ${lesson.titleEn}`, `打开第${lesson.number}课：${lesson.title}`)} className={lesson.number === 1 ? 'is-current' : ''} key={lesson.id} onClick={() => goToLesson(lesson.number)} type="button"><span>{lesson.number}</span><small>{l(`Bài ${lesson.number}`, `Lesson ${lesson.number}`, `第${lesson.number}课`)}</small></button>)}</div>
         </section>
 
         <section className="feedback-panel panel">

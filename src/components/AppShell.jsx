@@ -49,22 +49,28 @@ export default function AppShell({ children, mode = 'student', active = 'overvie
   const { profile, signOut } = useAuth()
   const items = mode === 'admin' ? adminItems : studentItems
   const displayName = profile?.display_name || (mode === 'admin' ? l('Giáo viên Liu', 'Teacher Liu', '刘老师') : l('Trần Linh', 'Linh Tran', '陈玲'))
+  const currentLessonNumber = Number(window.location.hash.match(/\/(?:app|preview)\/lesson\/(\d+)/)?.[1] || 1)
+
+  const contextualize = (path) => path.startsWith('/app/lesson/1')
+    ? path.replace('/app/lesson/1', `/app/lesson/${currentLessonNumber}`)
+    : path
 
   const go = (path) => {
+    const targetPath = contextualize(path)
     if (preview) {
-      if (path === '/app') return navigate('/preview/student')
-      if (path === '/app/lesson/1') return navigate('/preview/lesson/1')
-      if (path.startsWith('/app/lesson/1?')) return navigate(`/preview/lesson/1?${path.split('?')[1]}`)
-      if (path === '/app/vocabulary') return navigate('/preview/vocabulary')
-      if (path === '/app/settings') return navigate('/preview/settings')
-      if (path === '/app/progress') return navigate('/preview/student?section=progress')
-      if (path === '/app/review') return navigate('/preview/student?section=review')
-      if (path === '/admin/settings') return navigate('/preview/settings?mode=admin')
-      if (path === '/admin/students') return navigate('/preview/admin/users')
-      if (path === '/admin/vocabulary-practice') return navigate('/preview/admin/vocabulary-practice')
-      if (path.startsWith('/admin')) return navigate('/preview/admin')
+      if (targetPath === '/app') return navigate('/preview/student')
+      if (/^\/app\/lesson\/\d+$/.test(targetPath)) return navigate(targetPath.replace('/app/', '/preview/'))
+      if (/^\/app\/lesson\/\d+\?/.test(targetPath)) return navigate(targetPath.replace('/app/', '/preview/'))
+      if (targetPath === '/app/vocabulary') return navigate('/preview/vocabulary')
+      if (targetPath === '/app/settings') return navigate('/preview/settings')
+      if (targetPath === '/app/progress') return navigate('/preview/student?section=progress')
+      if (targetPath === '/app/review') return navigate('/preview/student?section=review')
+      if (targetPath === '/admin/settings') return navigate('/preview/settings?mode=admin')
+      if (targetPath === '/admin/students') return navigate('/preview/admin/users')
+      if (targetPath === '/admin/vocabulary-practice') return navigate('/preview/admin/vocabulary-practice')
+      if (targetPath.startsWith('/admin')) return navigate('/preview/admin')
     }
-    navigate(path)
+    navigate(targetPath)
   }
 
   return (
@@ -73,7 +79,7 @@ export default function AppShell({ children, mode = 'student', active = 'overvie
         <Brand inverse={mode === 'admin'} />
         <nav className="sidebar__nav" aria-label={l('Điều hướng chính', 'Main navigation', '主导航')}>
           {items.map(({ key, icon: Icon, path }) => (
-            <button className={active === key ? 'is-active' : ''} key={key} onClick={() => go(path)} onFocus={() => preloadRoute(path)} onPointerEnter={() => preloadRoute(path)} type="button">
+            <button className={active === key ? 'is-active' : ''} key={key} onClick={() => go(path)} onFocus={() => preloadRoute(contextualize(path))} onPointerEnter={() => preloadRoute(contextualize(path))} type="button">
               <Icon aria-hidden="true" size={20} strokeWidth={1.8} />
               <span>{t(key)}</span>
             </button>
@@ -113,7 +119,7 @@ export default function AppShell({ children, mode = 'student', active = 'overvie
 
       <nav className="bottom-nav" aria-label={l('Điều hướng trên điện thoại', 'Mobile navigation', '移动端导航')}>
         {(mode === 'admin' ? adminItems.slice(0, 5) : [studentItems[0], studentItems[1], studentItems[2], studentItems[7], { key: 'settings', icon: Settings, path: '/app/settings' }]).map(({ key, icon: Icon, path }) => (
-          <button className={active === key ? 'is-active' : ''} key={key} onClick={() => go(path)} onFocus={() => preloadRoute(path)} onPointerEnter={() => preloadRoute(path)} type="button">
+          <button className={active === key ? 'is-active' : ''} key={key} onClick={() => go(path)} onFocus={() => preloadRoute(contextualize(path))} onPointerEnter={() => preloadRoute(contextualize(path))} type="button">
             <Icon size={21} />
             <span>{t(key)}</span>
           </button>
